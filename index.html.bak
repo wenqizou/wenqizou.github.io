@@ -243,7 +243,7 @@
             </P>
         </div>
         <div class="swiper-slide">
-            <img src="images/7.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <img src="images/6.JPG" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
             <div class="redLine"></div>
             <div class="arrow"></div>
             <p class="three desc-b">
