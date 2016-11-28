@@ -24,32 +24,6 @@
 //                    $(".arrow").hide();//
                     swiperAnimate(swiper);
                     //每个slide切换结束时也运行当前slide动画
-//                    if(swiper.activeIndex==1){
-//                        //让文字一个一个显示出来；
-//                        showContent(true);
-//                    }else if(swiper.activeIndex==2){
-//                        showContent(false);
-//                    }
-//                    switch (swiper.activeIndex){
-//                        case 1:
-//                            console.log(1)
-//                            showContent(1);
-//                            break;
-//                        case 2:
-//                            console.log(2)
-//                            showContent(2);
-//                            break;
-//                        case 3:
-//                            console.log(3)
-//                            showContent(3);
-//                            break;
-//                        case 4:
-//                            showContent(4);
-//                            break;
-//                        case 5:
-//                            showContent(5);
-//                            break;
-//                    }
                     showContent(swiper.activeIndex);
                 }
             });//设置滑动的初始化
@@ -112,13 +86,6 @@
                         flag2=true;
                         break;
                 }
-//                if(flag){
-//                    Ospan=$(".one span");
-//                    arrow=1;
-//                }else {
-//                    Ospan=$(".two span");
-//                    arrow=2;
-//                }
                 //执行之前，先隐藏
                 Ospan.hide();
                 clearInterval(timer);
@@ -133,7 +100,7 @@
                     Ospan.eq(i).show();
                     i++;
                 },300);
-                var index=1;//room index
+                var index=0;//room index
                 var swiper2=new Swiper(".button-show-address",{
                     onTap:function(){
                         $(".modal").show().parent().find(".arrow").hide();
@@ -149,14 +116,14 @@
                 var right=new Swiper(".turn-right",{
                     onTap: function () {
                         index++;
-                        if(index>5) index=5;
+                        if(index>4) index=4;
                         $("#room").attr("src","images/room"+index+".JPG")
                     }
                 })
                 var left=new Swiper(".turn-left",{
                     onTap: function () {
                         index--;
-                        if(index<1) index=1;
+                        if(index<0) index=0;
                         $("#room").attr("src","images/room"+index+".JPG")
                     }
                 })
@@ -336,7 +303,7 @@
             </div>
             <div class="room">
                 <i class="turn-left"><</i>
-                <img src="images/room1.JPG" id="room">
+                <img src="images/room0.JPG" id="room">
                 <i class="turn-right">></i>
             </div>
         </div>

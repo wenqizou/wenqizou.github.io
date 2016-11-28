@@ -1,4 +1,4 @@
-*{margin:0;padding:0;}
+﻿*{margin:0;padding:0;}
 html,body{height: 100%;width:100%;}
 .swiper-container {
     height: 100%;
@@ -285,8 +285,8 @@ span{font-size:17px;color:#fff;font-family: "楷体";
     top:50%;
     margin-top:-25px;
 }
-.turn-left{left:-100px;}
-.turn-right{right:-100px;}
+.turn-left{left:-80px;}
+.turn-right{right:-80px;}
 .six span{color: #274c69;font-weight: bold;}
 .endding{
     background: #e9e9e9;
