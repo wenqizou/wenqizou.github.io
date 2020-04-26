@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/css/swiper.min.css" rel="stylesheet">
+    <link href="lib/css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/js/swiper.min.js"></script>
+    <script src="lib/js/jquery-3.1.0.js"></script>
+    <script src="lib/js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        window.onload= function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                pagination: '.swiper-pagination',
+                direction: 'vertical',
+                loop: false,
+                onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                    swiperAnimateCache(swiper); //隐藏动画元素
+                    swiperAnimate(swiper); //初始化完成开始动画
+                },
+                onSlideChangeEnd: function(swiper){
+//                    $(".arrow").hide();//
+                    swiperAnimate(swiper);
+                    //每个slide切换结束时也运行当前slide动画
+                    showContent(swiper.activeIndex);
+                }
+            });//设置滑动的初始化
+            var timer=null;
+            var flag=false;//第五张动画是否启动过
+            var flag2=false;//end动画是否启东过
+            function showContent(pageIndex){
+                var Ospan;
+                var arrow=pageIndex;
+                if(flag){
+                    $(".BigBall").hide();
+                    $(".line").removeClass("linemove1");
+                    $(".line2").removeClass("linemove2");
+                    $(".moveBall").removeClass("ballmove");
+                    $(".button-show-address").css("opacity",0);
+                    flag=false;
+                }
+                if(flag2){
+                    $(".last").removeClass("uptodown");
+                    $(".text-mid").css("background-image","url('images/logo-movies.png')");
+                }
+                switch (pageIndex){
+                    case 1:
+                        Ospan=$(".one span");
+                        break;
+                    case 2:
+                        Ospan=$(".two span");
+                        break;
+                    case 3:
+                        Ospan=$(".three span");
+                        $(".redLine").addClass("redToFly");
+                        break;
+                    case 4:
+                        Ospan=$(".four span");
+                        break;
+                    case 5:
+                        Ospan=$(".five span");
+                        setTimeout(function () {
+                            $(".BigBall").show();
+                            $(".line").addClass("linemove1");
+                            $(".line2").addClass("linemove2");
+                            $(".moveBall").addClass("ballmove");
+                            setTimeout(function(){
+                                $(".button-show-address").css("opacity",1);
+                            },2000);
+                        },5000)
+                        flag=true;
+                        break;
+                    case 6:
+                        Ospan=$(".six span");
+                        break;
+                    case 7:
+                        Ospan=$(".seven span");
+                        $(".last").addClass("uptodown");
+                        setTimeout(function () {
+                            $(".text-mid").animate({"opacity":0},2000, function () {
+                                $(this).css("background-image","url('images/logo-movies2.png')");
+                            }).animate({"opacity":1},2000);
+                        },3000)
+                        flag2=true;
+                        break;
+                }
+                //执行之前，先隐藏
+                Ospan.hide();
+                clearInterval(timer);
+                var i=0;
+                //文字描述一个一个显示出来
+                timer=setInterval(function () {
+                    if(i>Ospan.length){
+                        clearInterval(timer);
+                        //下滑箭头显示出来
+                        $(".arrow").removeClass("updown").eq(arrow-1).addClass("updown");
+                    }
+                    Ospan.eq(i).show();
+                    i++;
+                },300);
+                var index=0;//room index
+                var swiper2=new Swiper(".button-show-address",{
+                    onTap:function(){
+                        $(".modal").show().parent().find(".arrow").hide();
+                        $(".room").show();
+                    }
+                })
+                var swiper3=new Swiper(".cancle",{
+                    onTap:function(){
+                        $(".modal").hide().parent().find(".arrow").show();
+                        $(".room").hide();
+                    }
+                })
+                var right=new Swiper(".turn-right",{
+                    onTap: function () {
+                        index++;
+                        if(index>4) index=4;
+                        $("#room").attr("src","images/room"+index+".JPG")
+                    }
+                })
+                var left=new Swiper(".turn-left",{
+                    onTap: function () {
+                        index--;
+                        if(index<0) index=0;
+                        $("#room").attr("src","images/room"+index+".JPG")
+                    }
+                })
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="content"></div>
+            <img src="images/4.JPG">
+            <div class="phone"></div>
+            <div class="alert">
+                <div class="go right"></div>
+                <div class="go left"></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/2.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <div class="arrow"></div>
+            <P class="one desc">
+                <span>曾</span>
+                <span>经</span>
+                <span>,</span>
+            </P>
+            <p class="one desc2">
+                <span>我</span>
+                <span>以</span>
+                <span>为</span>
+                <span>我</span>
+                <span>能</span>
+                <span>独</span>
+                <span>自</span>
+                <span>面</span>
+                <span>对</span>
+                <span>整</span>
+                <span>个</span>
+                <span>世</span>
+                <span>界</span>
+                <span>。</span>
+            </p>
+            <p class="one desc3">
+                <span>坚</span>
+                <span>持</span>
+                <span>自</span>
+                <span>我</span>
+                <span>...</span>
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/3.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <div class="arrow"></div>
+            <P class="two desc">
+                <span>殊</span>
+                <span>不</span>
+                <span>知</span>
+                <span>,</span>
+            </P>
+            <p class="two desc2">
+                <span>经</span>
+                <span>不</span>
+                <span>住</span>
+                <span>这</span>
+                <span>尘</span>
+                <span>世</span>
+                <span>的</span>
+                <span>历</span>
+                <span>练</span>
+                <span>。</span>
+            </p>
+            <P class="two desc3">
+                <span>一</span>
+                <span>念</span>
+                <span>成</span>
+                <span>魔</span>
+                <span>,</span>
+                <span>沦</span>
+                <span>为</span>
+                <span>一</span>
+                <span>员</span>
+            </P>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/7.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <div class="redLine"></div>
+            <div class="arrow"></div>
+            <p class="three desc-b">
+                <span>唯</span>
+                <span>一</span>
+                <span>不</span>
+                <span>变</span>
+                <span>的</span>
+                <span>,</span>
+                <span>便</span>
+                <span>是</span>
+                <span>这</span>
+                <span>腰</span>
+                <span>间</span>
+                <span>的</span>
+                <span>红</span>
+                <span>缎</span>
+                <span>。</span>
+                <span>那</span>
+                <span>便</span>
+                <span>是</span>
+                <span>心</span>
+                <span>中</span>
+                <span>的</span>
+                <span>羁</span>
+                <span>绊</span>
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/caodi.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <div class="arrow"></div>
+            <p class="four desc">
+                <span>选</span>
+                <span>择</span>
+                <span>回</span>
+                <span>到</span>
+                <span>熟</span>
+                <span>悉</span>
+                <span>的</span>
+                <span>地</span>
+                <span>方</span>
+                <span>...</span>
+            </p>
+            <p class="four desc2">
+                <span>去</span>
+                <span>找</span>
+                <span>回</span>
+                <span>迷</span>
+                <span>失</span>
+                <span>的</span>
+                <span>自</span>
+                <span>己</span>
+                <span>。</span>
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <div class="arrow"></div>
+            <img src="images/city.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <p class="five desc">
+                <span>故</span>
+                <span>将</span>
+                <span>这</span>
+                <span>居</span>
+                <span>身</span>
+                <span>之</span>
+                <span>所</span>
+                <span>,</span>
+            </p>
+            <p class="five desc2">
+                <span>找</span>
+                <span>一</span>
+                <span>位</span>
+                <span>合</span>
+                <span>适</span>
+                <span>的</span>
+                <span>人</span>
+                <span>。</span>
+            </p>
+            <div class="BigBall">
+                <div class="moveBall">
+                    <div class="button-show-address">
+                        查看布局
+                    </div>
+                </div>
+            </div>
+            <i class="line"></i>
+            <i class="line2"></i>
+            <div class="modal">
+                <div class="cancle">X</div>
+            </div>
+            <div class="room">
+                <i class="turn-left"><</i>
+                <img src="images/room0.JPG" id="room">
+                <i class="turn-right">></i>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="arrow"></div>
+            <img src="images/end.jpg" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s">
+            <p class="six desc">
+                <span>故</span>
+                <span>事</span>
+                <span>并</span>
+                <span>没</span>
+                <span>有</span>
+                <span>结</span>
+                <span>束</span>
+                <span>,</span>
+                <span>因</span>
+                <span>为</span>
+                <span>正</span>
+                <span>年</span>
+                <span>轻</span>
+            </p>
+            <p class="six desc2">
+                <span>但</span>
+                <span>是</span>
+                <span>酒</span>
+                <span>喝</span>
+                <span>完</span>
+                <span>了</span>
+                <span>。</span>
+                <span>所</span>
+                <span>以</span>
+            </p>
+            <p class="six desc3">
+                <span>告</span>
+                <span>一</span>
+                <span>段</span>
+                <span>落</span>
+                <span>,</span>
+                <span>有</span>
+                <span>机</span>
+                <span>会</span>
+                <span>我</span>
+                <span>会</span>
+                <span>继</span>
+                <span>续</span>
+                <span>完</span>
+                <span>善</span>
+            </p>
+        </div>
+        <div class="swiper-slide endding">
+            <div class="last">
+                <div class="A text-tou"></div>
+                <div class="B text-mid"></div>
+                <div class="A text-wei"></div>
+            </div>
+            <p class="seven desc-b">
+                <span>最</span>
+                <span>后</span>
+                <span>,</span>
+                <span>祝</span>
+                <span>各</span>
+                <span>位</span>
+                <span>在</span>
+                <span>深</span>
+                <span>圳</span>
+                <span>拼</span>
+                <span>博</span>
+                <span>的</span>
+                <span>伙</span>
+                <span>伴</span>
+                <span>好</span>
+                <span>运</span>
+                <span>,</span>
+                <span>fighting...</span>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
