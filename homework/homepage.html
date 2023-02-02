@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css"
+    />
+    <title>IN PRAISE OF SHADOWS</title>
+  </head>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .background-video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      opacity: 100%;
+    }
+    .home-menu {
+      margin: 50px 0 0 50px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 7vw;
+    }
+    .container-center {
+      margin: 200px auto;
+      text-align: center;
+      font-size: 8vw;
+      position: relative;
+      z-index: 999;
+    }
+    .container-center .en {
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffff;
+    }
+    .container-center .cn {
+      position: absolute;
+      opacity: 0.5;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #5a5a5a;
+    }
+    .circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: #fff;
+    }
+  </style>
+  <body>
+    <video
+      class="background-video"
+      autoplay=""
+      loop=""
+      muted=""
+      poster="video/light_shadow_home.mp4"
+    >
+      <source src="video/light_shadow_home.mp4" video="" />
+    </video>
+    <i class="fa fa-bars home-menu" aria-hidden="true"></i>
+    <div class="container-center">
+      <div class="en">In Praise of Shadows</div>
+      <div class="cn">陰翳礼讃</div>
+    </div>
+    <!-- <div class="circle"></div> -->
+  </body>
+</html>
