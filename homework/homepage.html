@@ -65,6 +65,11 @@
       cursor: pointer;
       color: #fff;
       font-size: 7vw;
+      position: relative;
+      z-index: 999;
+    }
+    .home-menu:hover {
+      color: #000;
     }
     .container-center {
       margin: 200px auto;
@@ -154,6 +159,11 @@
         let cicle = document.getElementById('circle')
         cicle.style.left = x + 'px'
         cicle.style.top = y + 'px'
+      }
+      document.onmouseleave = function (event) {
+        let cicle = document.getElementById('circle')
+        cicle.style.left = '-300px'
+        cicle.style.top = '-300px'
       }
     }, 10000)
   }
