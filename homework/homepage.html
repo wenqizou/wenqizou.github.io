@@ -4,43 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./fonts/stylesheet.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>IN PRAISE OF SHADOWS</title>
   </head>
-  <style>
-    @font-face {
-      font-family: 'Qanelas Soft DEMO';
-      src: url('./fonts/QanelasSoftDEMO-UltraLight.eot');
-      src: url('./fonts/QanelasSoftDEMO-UltraLight.eot?#iefix')
-          format('embedded-opentype'),
-        url('./fonts/QanelasSoftDEMO-UltraLight.woff2') format('woff2'),
-        url('./fonts/QanelasSoftDEMO-UltraLight.woff') format('woff'),
-        url('./fonts/QanelasSoftDEMO-UltraLight.ttf') format('truetype'),
-        url('./fonts/QanelasSoftDEMO-UltraLight.svg#QanelasSoftDEMO-UltraLight')
-          format('svg');
-      font-weight: 200;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'Qanelas Soft DEMO Bold';
-      src: url('./fonts/QanelasSoftDEMO-ExtraBold.eot');
-      src: url('./fonts/QanelasSoftDEMO-ExtraBold.eot?#iefix')
-          format('embedded-opentype'),
-        url('./fonts/QanelasSoftDEMO-ExtraBold.woff2') format('woff2'),
-        url('./fonts/QanelasSoftDEMO-ExtraBold.woff') format('woff'),
-        url('./fonts/QanelasSoftDEMO-ExtraBold.ttf') format('truetype'),
-        url('./fonts/QanelasSoftDEMO-ExtraBold.svg#QanelasSoftDEMO-ExtraBold')
-          format('svg');
-      font-weight: bold;
-      font-style: normal;
-      font-display: swap;
-    }
-  </style>
   <style>
     html,
     body {
@@ -64,7 +38,7 @@
       margin: 50px 0 0 50px;
       cursor: pointer;
       color: #fff;
-      font-size: 7vw;
+      font-size: 3vw;
       position: relative;
       z-index: 999;
     }
@@ -95,9 +69,9 @@
       top: 50%;
       left: 50%;
       transform: translateX(-50%);
-      font-family: 'Qanelas Soft DEMO';
+      font-family: 'Letter Gothic Std Bold';
       color: #ffff;
-      animation: text 15s linear 5s;
+      animation: text 4s linear;
       animation-fill-mode: forwards;
     }
     .container-center .cn {
@@ -129,6 +103,32 @@
       z-index: 666;
       /* animation: move 6s linear 7s; */
     }
+    .arrow-right {
+      position: fixed;
+      top: 50%;
+      right: 150px;
+      transform: translateY(-50%);
+      font-size: 30px;
+      opacity: 0;
+    }
+    .table-fake {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+    }
+    .table-fake div {
+      width: calc(33.33% - 2px);
+      height: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      text-align: center;
+      font-size: 3vw;
+      line-height: 50vh;
+    }
   </style>
   <body>
     <video
@@ -137,22 +137,28 @@
       muted=""
       poster="video/light_shadow_home.mp4"
     >
-      <source src="video/back2.mp4" video="" />
+      <source src="video/video.mp4" video="" />
     </video>
     <i class="fa fa-bars home-menu" aria-hidden="true"></i>
     <div class="container-center">
-      <div class="en">In Praise of Shadows</div>
+      <div class="en">
+        In Praise of Shadows<i
+          class="fa-solid fa-chevron-right arrow-right animate__animated animate__fadeOut animate__infinite"
+          id="nextpage"
+        ></i>
+      </div>
       <div class="cn">
         <img src="./assets/text.png" />
       </div>
-      <!-- <div class="cn">陰翳礼讃</div> -->
     </div>
     <div class="circle" id="circle"></div>
   </body>
 </html>
 <script>
   window.onload = function () {
+    const nextbtn = document.getElementById('nextpage')
     setTimeout(function () {
+      nextbtn.style.opacity = 1
       document.onmousemove = function (event) {
         let x = event.clientX - 150
         let y = event.clientY - 150
@@ -165,6 +171,9 @@
         cicle.style.left = '-300px'
         cicle.style.top = '-300px'
       }
-    }, 20000)
+    }, 4000)
+    nextbtn.onclick = function () {
+      window.location.href = './page1.html'
+    }
   }
 </script>

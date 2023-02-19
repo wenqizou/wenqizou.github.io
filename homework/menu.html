@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./fonts/stylesheet.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>IN PRAISE OF SHADOWS</title>
+  </head>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      background: #000;
+      font-family: 'Letter Gothic Std';
+      color: #fff;
+    }
+    .table-fake {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+    .table-fake div {
+      width: calc(33.33% - 2px);
+      height: 50%;
+      border-left: 1px solid #757575;
+      border-bottom: 1px solid #757575;
+      color: #fff;
+      text-align: center;
+      font-size: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .table-fake div.no-left {
+      border-left: none;
+    }
+    .table-fake div.no-right {
+      border-right: none;
+    }
+    .table-fake div > a {
+      display: inline-block;
+      line-height: 100px;
+      text-align: center;
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+    }
+    .table-fake div > a:hover {
+      animation: bounce; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 1.5s; /* don't forget to set a duration! */
+    }
+    .bg-center {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(2px);
+    }
+
+    @media screen and (max-width: 1400px) {
+      .table-fake div {
+        width: calc(50% - 2px);
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .table-fake div {
+        height: 33.33vh;
+      }
+    }
+  </style>
+  <body>
+    <div class="table-fake">
+      <div><a class="animate__animated" href="./page1.html">1</a></div>
+      <div><a class="animate__animated" href="./page2.html">2</a></div>
+      <div><a class="animate__animated" href="./page3.html">3</a></div>
+      <div><a class="animate__animated">4</a></div>
+      <div><a class="animate__animated" href="./homepage.html">5</a></div>
+      <div><a class="animate__animated">6</a></div>
+    </div>
+    <div class="bg-center">
+      <img src="./assets/text2.png" />
+    </div>
+  </body>
+</html>
+<script></script>
