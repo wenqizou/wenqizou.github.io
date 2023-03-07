@@ -21,7 +21,7 @@
       padding: 0;
       margin: 0;
       background: #000;
-      font-family: 'Letter Gothic Std';
+      font-family: '宋体';
       color: #fff;
     }
     .table-fake {
@@ -35,22 +35,13 @@
       overflow-y: scroll;
     }
     .table-fake div {
-      width: calc(33.33% - 2px);
-      height: 50%;
-      border-left: 1px solid #757575;
-      border-bottom: 1px solid #757575;
       color: #fff;
       text-align: center;
       font-size: 3vw;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-    .table-fake div.no-left {
-      border-left: none;
-    }
-    .table-fake div.no-right {
-      border-right: none;
+      flex: 1;
     }
     .table-fake div > a {
       display: inline-block;
@@ -86,16 +77,14 @@
     }
   </style>
   <body>
+    <i class="fa fa-bars home-menu" aria-hidden="true"></i>
     <div class="table-fake">
-      <div><a class="animate__animated" href="./page1.html">1</a></div>
-      <div><a class="animate__animated" href="./page2.html">2</a></div>
-      <div><a class="animate__animated" href="./page3.html">3</a></div>
-      <div><a class="animate__animated">4</a></div>
-      <div><a class="animate__animated" href="./homepage.html">5</a></div>
-      <div><a class="animate__animated">6</a></div>
-    </div>
-    <div class="bg-center">
-      <img src="./assets/text2.png" />
+      <div><a class="animate__animated" href="./page1.html">一</a></div>
+      <div><a class="animate__animated" href="./page2.html">二</a></div>
+      <div><a class="animate__animated" href="./page3.html">三</a></div>
+      <div><a class="animate__animated" href="./page4.html">肆</a></div>
+      <div><a class="animate__animated" href="./page5.html">伍</a></div>
+      <div><a class="animate__animated" href="./page6.html">六</a></div>
     </div>
   </body>
 </html>
