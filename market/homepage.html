@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
+    />
+    <script src="./assets/jq.min.js"></script>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    * {
+      margin: 0;
+    }
+    .word-scroll {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      height: calc(100% - 60px);
+    }
+    .word-scroll > div {
+      /* height: 16vh; */
+      width: 100vw;
+      overflow: hidden;
+    }
+    .yellow {
+      background: #ffd966;
+    }
+    .orange {
+      background: #f38066;
+    }
+    .blue {
+      background: #03aaed;
+    }
+    .tips-wrap {
+      display: flex;
+      width: 3000px;
+      align-items: center;
+      height: 100%;
+    }
+    .tips-wrap.one {
+      animation: move 10s linear 1s infinite;
+    }
+    .tips-wrap.two {
+      animation: move 7s linear 1s infinite;
+    }
+    .tips-wrap.three {
+      animation: move 15s linear 1s infinite;
+    }
+    .tips-wrap.four {
+      animation: move 5s linear 1s infinite;
+    }
+    .tips-wrap.five {
+      animation: move 8s linear 1s infinite;
+    }
+    .tips-wrap.six {
+      animation: move 3s linear 1s infinite;
+    }
+    .tips-wrap:hover,
+    .bottom .tips-wrap:hover {
+      cursor: pointer;
+      animation-play-state: paused;
+    }
+    .tips {
+      padding: 0 15px;
+      width: 542px;
+    }
+    .tips h1 {
+      font-size: 40px;
+      font-weight: normal;
+    }
+    .tips p {
+      font-size: 20px;
+      white-space: break-spaces;
+      letter-spacing: 5px;
+    }
+    .bottom {
+      height: 60px;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .bottom .tips p {
+      line-height: 60px;
+    }
+    @keyframes move {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(-573px, 0);
+      }
+    }
+    .bottom .tips-wrap {
+      animation: move 6s linear 1s infinite;
+    }
+  </style>
+  <body>
+    <div class="word-scroll">
+      <div class="yellow">
+        <div class="tips-wrap one">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+      <div class="orange">
+        <div class="tips-wrap two">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+      <div class="blue">
+        <div class="tips-wrap three">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+      <div class="yellow">
+        <div class="tips-wrap four">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+      <div class="orange">
+        <div class="tips-wrap five">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+      <div class="blue">
+        <div class="tips-wrap six">
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+          <div class="tips">
+            <h1>歡迎光臨致民路菜市場</h1>
+            <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="tips-wrap">
+        <div class="tips">
+          <p>開始購物/ GO SHOPPING</p>
+        </div>
+        <div class="tips">
+          <p>開始購物/ GO SHOPPING</p>
+        </div>
+        <div class="tips">
+          <p>開始購物/ GO SHOPPING</p>
+        </div>
+        <div class="tips">
+          <p>開始購物/ GO SHOPPING</p>
+        </div>
+        <div class="tips">
+          <p>開始購物/ GO SHOPPING</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $('.bottom .tips').click(() => {
+      window.location.href = './page2.html'
+    })
+  })
+</script>

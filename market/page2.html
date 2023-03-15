@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
+    />
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      font-family: '黑体';
+    }
+    .head {
+      height: 80px;
+      overflow: hidden;
+    }
+    .tips-wrap {
+      display: flex;
+      width: 3000px;
+      align-items: center;
+      height: 100%;
+      animation: move 10s linear 1s infinite;
+    }
+    .tips-wrap:hover {
+      cursor: pointer;
+      animation-play-state: paused;
+    }
+    .tips {
+      padding: 0 15px;
+      width: 542px;
+    }
+    .tips h1 {
+      font-size: 40px;
+      font-weight: normal;
+    }
+    .tips p {
+      font-size: 20px;
+      white-space: break-spaces;
+      letter-spacing: 5px;
+    }
+    .container {
+      min-height: calc(100% - 80px);
+      display: flex;
+    }
+    .menu {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .catage {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      line-height: 30px;
+    }
+
+    .catage li.active {
+      font-weight: bold;
+    }
+
+    .catage li:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .content {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+    .content > div {
+      background: #ddd;
+      height: 200px;
+      width: 200px;
+    }
+    .light-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background: #ddd;
+    }
+    @keyframes move {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(-573px, 0);
+      }
+    }
+  </style>
+  <body>
+    <div class="head">
+      <div class="tips-wrap">
+        <div class="tips">
+          <h1>歡迎光臨致民路菜市場</h1>
+          <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+        </div>
+        <div class="tips">
+          <h1>歡迎光臨致民路菜市場</h1>
+          <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+        </div>
+        <div class="tips">
+          <h1>歡迎光臨致民路菜市場</h1>
+          <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+        </div>
+        <div class="tips">
+          <h1>歡迎光臨致民路菜市場</h1>
+          <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+        </div>
+        <div class="tips">
+          <h1>歡迎光臨致民路菜市場</h1>
+          <p>WELCOME TO ZHIMIN ROAD MARKET</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu">
+        <ul class="catage">
+          <li class="active">所有種類/All Categories</li>
+          <li>新鮮蔬菜/Fresh Produce</li>
+          <li>肉類/Meat</li>
+          <li>鮮/Seafood</li>
+        </ul>
+        <ul class="catage">
+          <li>有光源/All light source</li>
+          <li>白/White</li>
+          <li>紅白/White&Red</li>
+          <li>藍紅/Blue&Red</li>
+          <li>自然光/Neutral</li>
+        </ul>
+      </div>
+      <div class="content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="light-bg"></div>
+  </body>
+</html>
