@@ -9,12 +9,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
     />
+    <script src="./assets/jq.min.js"></script>
+    <script src="./assets/font.js"></script>
   </head>
   <style>
     html,
     body {
       height: 100%;
-      font-family: '黑体';
+      font-family: 'zen-kaku-gothic-antique', sans-serif;
     }
     .head {
       height: 80px;
@@ -38,6 +40,7 @@
     .tips h1 {
       font-size: 40px;
       font-weight: normal;
+      position: relative;
     }
     .tips p {
       font-size: 20px;
@@ -74,12 +77,9 @@
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       align-items: center;
+      padding-right: 100px;
     }
-    .content > div {
-      background: #ddd;
-      height: 200px;
-      width: 200px;
-    }
+
     .light-bg {
       position: fixed;
       width: 100%;
@@ -87,7 +87,7 @@
       z-index: -1;
       top: 0;
       left: 0;
-      background: #ddd;
+      background: #fff;
     }
     @keyframes move {
       from {
@@ -97,57 +97,141 @@
         transform: translate(-573px, 0);
       }
     }
+    .bg {
+      width: 50px;
+      height: 50px;
+      top: 0;
+      right: 73px;
+      position: absolute;
+      background: url(./assets/img/home1.png) no-repeat;
+      background-size: contain;
+    }
+    .card {
+      padding: 17px;
+      line-height: 22px;
+      word-break: break-all;
+      text-align: center;
+    }
+    .card .photo {
+      width: 250px;
+      height: 250px;
+      display: inline-block;
+      margin-bottom: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+      filter: grayscale(100%);
+    }
+    .card .photo:hover {
+      -webkit-filter: none;
+      filter: none;
+    }
+    .photo img {
+      width: 100%;
+    }
+    .menu-wrap {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
   </style>
   <body>
     <div class="head">
       <div class="tips-wrap">
         <div class="tips">
-          <h1>歡迎光臨致民路菜市場</h1>
+          <h1>
+            歡迎光臨致民路菜市場
+            <div class="bg"></div>
+          </h1>
           <p>WELCOME TO ZHIMIN ROAD MARKET</p>
         </div>
         <div class="tips">
-          <h1>歡迎光臨致民路菜市場</h1>
+          <h1>
+            歡迎光臨致民路菜市場
+            <div class="bg"></div>
+          </h1>
           <p>WELCOME TO ZHIMIN ROAD MARKET</p>
         </div>
         <div class="tips">
-          <h1>歡迎光臨致民路菜市場</h1>
+          <h1>
+            歡迎光臨致民路菜市場
+            <div class="bg"></div>
+          </h1>
           <p>WELCOME TO ZHIMIN ROAD MARKET</p>
         </div>
         <div class="tips">
-          <h1>歡迎光臨致民路菜市場</h1>
+          <h1>
+            歡迎光臨致民路菜市場
+            <div class="bg"></div>
+          </h1>
           <p>WELCOME TO ZHIMIN ROAD MARKET</p>
         </div>
         <div class="tips">
-          <h1>歡迎光臨致民路菜市場</h1>
+          <h1>
+            歡迎光臨致民路菜市場
+            <div class="bg"></div>
+          </h1>
           <p>WELCOME TO ZHIMIN ROAD MARKET</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="menu">
-        <ul class="catage">
-          <li class="active">所有種類/All Categories</li>
-          <li>新鮮蔬菜/Fresh Produce</li>
-          <li>肉類/Meat</li>
-          <li>鮮/Seafood</li>
-        </ul>
-        <ul class="catage">
-          <li>有光源/All light source</li>
-          <li>白/White</li>
-          <li>紅白/White&Red</li>
-          <li>藍紅/Blue&Red</li>
-          <li>自然光/Neutral</li>
-        </ul>
+        <div class="menu-wrap">
+          <ul class="catage">
+            <li class="active">所有種類/All Categories</li>
+            <li>新鮮蔬菜/Fresh Produce</li>
+            <li>肉類/Meat</li>
+            <li>鮮/Seafood</li>
+          </ul>
+          <ul class="catage">
+            <li>有光源/All light source</li>
+            <li>白/White</li>
+            <li>紅白/White&Red</li>
+            <li>藍紅/Blue&Red</li>
+            <li>自然光/Neutral</li>
+          </ul>
+        </div>
       </div>
-      <div class="content">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="content" id="contain">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="description">cheese cookies</div>
+          <div class="category">Dessert</div>
+          <div class="time">2 hours</div>
+        </div>
+        <div class="card">
+          <div class="photo"></div>
+          <div class="description">cheese cookies</div>
+          <div class="category">Dessert</div>
+          <div class="time">2 hours</div>
+        </div>
       </div>
     </div>
     <div class="light-bg"></div>
   </body>
 </html>
+<script>
+  $(document).ready(function () {
+    // get json
+    fetch('./data/data.json')
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (data) {
+        let box = document.querySelector('#contain')
+        let out = ''
+        for (let item of data) {
+          out += `<div class="card">
+              <div class="photo" style="background-image:url('./assets/img/${item.png}')"></div>
+              <div class="category">${item.categories}</div>
+              <div class="description">${item.name}</div>
+            </div>`
+        }
+        box.innerHTML = out
+      })
+  })
+</script>

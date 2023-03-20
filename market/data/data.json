@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "png": "white1.png",
+    "name": "endive",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 2,
+    "png": "white2.png",
+    "name": "squash",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 3,
+    "png": "white3.png",
+    "name": "green pepper",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 4,
+    "png": "white4.png",
+    "name": "celery",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 5,
+    "png": "white5.png",
+    "name": "bok choy",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 6,
+    "png": "white6.png",
+    "name": "Chinese cabbage",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 7,
+    "png": "white7.png",
+    "name": "green soy bean",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 8,
+    "png": "white8.png",
+    "name": "green leaves",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 9,
+    "png": "white9.png",
+    "name": "chinese celery",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 10,
+    "png": "white10.png",
+    "name": "kidney bean",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 11,
+    "png": "white11.png",
+    "name": "Chinese watermelon",
+    "categories": "vegetable",
+    "featured shops": "Mr. Li Grocery",
+    "light source": "white"
+  },
+  {
+    "id": 12,
+    "png": "red&white1.png",
+    "name": "persimmon",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 13,
+    "png": "red&white2.png",
+    "name": "apple",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 14,
+    "png": "red&white3.png",
+    "name": "pear",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 15,
+    "png": "red&white4.png",
+    "name": "peach",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 16,
+    "png": "red&white5.png",
+    "name": "kiwi",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 17,
+    "png": "red&white6.png",
+    "name": "banana",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 18,
+    "png": "red&white7.png",
+    "name": "dragon fruit",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 19,
+    "png": "red&white8.png",
+    "name": "sugar orange",
+    "categories": "fruit",
+    "featured shops": "Antie Su Very fresh fruits",
+    "light source": "red/White"
+  },
+  {
+    "id": 20,
+    "png": "red&white9.png",
+    "name": "chicken feet",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "red/White"
+  },
+  {
+    "id": 21,
+    "png": "blue&red1.png",
+    "name": "pork hind leg",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 22,
+    "png": "blue&red2.png",
+    "name": "streaky pork",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 23,
+    "png": "blue&red3.png",
+    "name": "pig feet",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 24,
+    "png": "blue&red4.png",
+    "name": "pork ribs",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 25,
+    "png": "blue&red5.png",
+    "name": "pork shoulder",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 26,
+    "png": "blue&red6.png",
+    "name": "pork bone",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 27,
+    "png": "blue&red7.png",
+    "name": "fish fillet",
+    "categories": "meat",
+    "featured shops": "butcher Wang",
+    "light source": "blue/red"
+  },
+  {
+    "id": 28,
+    "png": "blue&red8.png",
+    "name": "salmon",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "blue/red"
+  },
+  {
+    "id": 29,
+    "png": "natural1.png",
+    "name": "crucian carp",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  },
+  {
+    "id": 30,
+    "png": "natural2.png",
+    "name": "leopard coral grouper",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  },
+  {
+    "id": 31,
+    "png": "natural3.png",
+    "name": "clam",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  },
+  {
+    "id": 32,
+    "png": "natural4.png",
+    "name": "octopus",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  },
+  {
+    "id": 33,
+    "png": "natural5.png",
+    "name": "shrimp",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  },
+  {
+    "id": 34,
+    "png": "natural6.png",
+    "name": "silver carp",
+    "categories": "seafood",
+    "featured shops": "great seafood",
+    "light source": "natural"
+  }
+]

@@ -85,18 +85,62 @@
         background: #ddd;
       }
       .grid-containr {
-        display: grid;
-        padding: 0 30px;
-        grid-template-columns: repeat(4, 1fr);
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        width: 1400px;
+        margin: 0 auto;
       }
       .msg-box {
         margin: 20px;
-        justify-content: center;
         display: flex;
         cursor: pointer;
+        overflow: hidden;
+      }
+      .card-warp {
+        width: 2000px;
+        display: flex;
+      }
+      #row1 {
+        animation: move 10s linear 1s infinite;
+      }
+      #row2 {
+        transform: translate(-1536px, 0);
+        animation: move2 10s linear 1s infinite;
+      }
+      .card-warp:hover {
+        animation-play-state: paused !important;
+      }
+      .card {
+        padding: 17px;
+        border: 1px solid #000;
+        text-align: left;
+        border-radius: 17px;
+        line-height: 22px;
+        margin-right: 20px;
+        word-break: break-all;
+      }
+      .card .photo {
+        background: #ddd;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+
+      /* 236+20 */
+      @keyframes move {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(-1536px, 0);
+        }
+      }
+
+      @keyframes move2 {
+        from {
+          transform: translate(-1536px, 0);
+        }
+        to {
+          transform: translate(0, 0);
+        }
       }
     </style>
   </head>
@@ -149,35 +193,51 @@
       </div>
       <div class="grid-containr">
         <div class="msg-box">
-          <div class="card">
-            <div class="emoji">🌄</div>
-            <div class="category">Sunrise over mountains</div>
-            <div class="description">SSun, Mountains, Early Morning</div>
-            <div class="year">xxx</div>
+          <div class="card-warp" id="row1">
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
           </div>
         </div>
         <div class="msg-box">
-          <div class="card">
-            <div class="emoji">🌄</div>
-            <div class="category">Sunrise over mountains</div>
-            <div class="description">SSun, Mountains, Early Morning</div>
-            <div class="year">xxx</div>
+          <div class="card-warp" id="row2">
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
           </div>
         </div>
         <div class="msg-box">
-          <div class="card">
-            <div class="emoji">🌄</div>
-            <div class="category">Sunrise over mountains</div>
-            <div class="description">SSun, Mountains, Early Morning</div>
-            <div class="year">xxx</div>
-          </div>
-        </div>
-        <div class="msg-box">
-          <div class="card">
-            <div class="emoji">🌄</div>
-            <div class="category">Sunrise over mountains</div>
-            <div class="description">SSun, Mountains, Early Morning</div>
-            <div class="year">xxx</div>
+          <div class="card-warp" id="row3">
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
+            <div class="card">
+              <div class="photo"></div>
+              <div class="description">cheese cookies</div>
+              <div class="category">Dessert</div>
+              <div class="time">2 hours</div>
+            </div>
           </div>
         </div>
       </div>
@@ -195,5 +255,42 @@
     $('.msg-box').click(() => {
       window.location.href = './page2.html'
     })
+    function buildhtml(row1) {
+      let out = ''
+      for (let item of row1) {
+        out += `<div class="card">
+              <div class="photo"></div>
+              <div class="description">${item.Name}</div>
+              <div class="category">${item.Genre}</div>
+              <div class="time">${item.TimeSpent}</div>
+            </div>`
+      }
+      //secound for scroll
+      for (let item of row1) {
+        out += `<div class="card">
+              <div class="photo"></div>
+              <div class="description">${item.Name}</div>
+              <div class="category">${item.Genre}</div>
+              <div class="time">${item.TimeSpent}</div>
+            </div>`
+      }
+      return out
+    }
+    // get json
+    fetch('./data/data.json')
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (data) {
+        //scroll row
+        const row1 = data.slice(0, 6)
+        const row2 = data.slice(7, 13)
+        console.log(row1)
+
+        let box = document.querySelector('#row1')
+        let box2 = document.querySelector('#row2')
+        box.innerHTML = buildhtml(row1)
+        box2.innerHTML = buildhtml(row2)
+      })
   })
 </script>
