@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
@@ -16,7 +22,8 @@
     html,
     body {
       height: 100%;
-      font-family: 'zen-kaku-gothic-antique', sans-serif;
+      /* font-family: 'zen-kaku-gothic-antique', sans-serif; */
+      font-family: 'Noto Sans JP', sans-serif;
     }
     .head {
       height: 80px;
@@ -65,6 +72,7 @@
 
     .catage li.active {
       font-weight: bold;
+      text-decoration: none;
     }
 
     .catage li:hover {
@@ -88,6 +96,26 @@
       top: 0;
       left: 0;
       background: #fff;
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+    }
+    .light1 div:nth-child(2n) {
+      background: #fff;
+    }
+    .light1 div:nth-child(2n + 1) {
+      background: #fff;
+    }
+    .light2 div:nth-child(2n) {
+      background: #f38066;
+    }
+    .light2 div:nth-child(2n + 1) {
+      background: #fff;
+    }
+    .light3 div:nth-child(2n) {
+      background: #f38066;
+    }
+    .light3 div:nth-child(2n + 1) {
+      background: #03aaed;
     }
     @keyframes move {
       from {
@@ -103,8 +131,10 @@
       top: 0;
       right: 73px;
       position: absolute;
-      background: url(./assets/img/home1.png) no-repeat;
       background-size: contain;
+    }
+    .bg1 {
+      background-image: url(./assets/img/home1.png) no-repeat;
     }
     .card {
       padding: 17px;
@@ -136,6 +166,34 @@
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
+    }
+    .popup {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      background: rgba(255, 255, 255, 0.6);
+      display: none;
+    }
+    .popup-center {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .popup-center .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-width: 205px;
+    }
+    .popup-center .desc p {
+      line-height: 25px;
+    }
+    .popup-center .pic img {
+      max-width: 500px;
     }
   </style>
   <body>
@@ -181,57 +239,140 @@
     <div class="container">
       <div class="menu">
         <div class="menu-wrap">
-          <ul class="catage">
-            <li class="active">所有種類/All Categories</li>
-            <li>新鮮蔬菜/Fresh Produce</li>
-            <li>肉類/Meat</li>
-            <li>鮮/Seafood</li>
+          <ul class="catage" id="catage">
+            <li class="active" value="">所有種類/All Categories</li>
+            <li value="vegetable">新鮮蔬菜/Fresh Produce</li>
+            <li value="meat">肉類/Meat</li>
+            <li value="seafood">鮮/Seafood</li>
+            <li value="fruit">水果/fruit</li>
           </ul>
-          <ul class="catage">
-            <li>有光源/All light source</li>
-            <li>白/White</li>
-            <li>紅白/White&Red</li>
-            <li>藍紅/Blue&Red</li>
-            <li>自然光/Neutral</li>
+          <ul class="catage" id="shop">
+            <li class="active" value="">所有店铺/All featured shops</li>
+            <li value="Antie Su Very fresh fruits">
+              Antie Su Very fresh fruits
+            </li>
+            <li value="butcher Wang">butcher Wang</li>
+            <li value="great seafood">great seafood</li>
+            <li value="Mr. Li Grocery">Mr. Li Grocery</li>
+          </ul>
+          <ul class="catage" id="light">
+            <li class="active" light="light0">所有光源/All light source</li>
+            <li light="light1">白/White</li>
+            <li light="light2">紅白/White&Red</li>
+            <li light="light3">藍紅/Blue&Red</li>
+            <li light="light4">自然光/Neutral</li>
           </ul>
         </div>
       </div>
-      <div class="content" id="contain">
-        <div class="card">
-          <div class="photo"></div>
-          <div class="description">cheese cookies</div>
-          <div class="category">Dessert</div>
-          <div class="time">2 hours</div>
+      <div class="content" id="contain"></div>
+    </div>
+    <div class="popup">
+      <div class="popup-center">
+        <div class="desc">
+          <p>Name:</p>
+          <p>You can find in:</p>
+          <p>Its favorite light source:</p>
         </div>
-        <div class="card">
-          <div class="photo"></div>
-          <div class="description">cheese cookies</div>
-          <div class="category">Dessert</div>
-          <div class="time">2 hours</div>
+        <div class="pic">
+          <img src="./assets/img/blue&red1.png" />
         </div>
       </div>
     </div>
-    <div class="light-bg"></div>
+    <div class="light-bg light1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </body>
 </html>
 <script>
   $(document).ready(function () {
+    let allData = []
+    let filtered = []
+    let condition = {
+      categories: '',
+      featuredshops: ''
+    }
     // get json
     fetch('./data/data.json')
       .then(function (response) {
         return response.json()
       })
       .then(function (data) {
-        let box = document.querySelector('#contain')
-        let out = ''
-        for (let item of data) {
-          out += `<div class="card">
-              <div class="photo" style="background-image:url('./assets/img/${item.png}')"></div>
+        allData = data
+        filter()
+      })
+    //select event
+    $('#light li').click(function () {
+      $(this).addClass('active').siblings().removeClass('active')
+      const light = $(this).attr('light')
+      $('.light-bg')
+        .removeClass()
+        .addClass('light-bg ' + light)
+    })
+
+    $('.popup').click(function () {
+      $(this).hide()
+    })
+    //pick img
+    $('#contain').on('click', '.card', function () {
+      let index = Number($(this).attr('index'))
+      let cardinfo = filtered[index]
+      console.log(cardinfo)
+      const html = `<div class="desc">
+                  <p>Name: ${cardinfo.name}</p>
+                  <p>You can find in: ${cardinfo.featuredshops}</p>
+                  <p>Its favorite light source: ${cardinfo.lightsource}</p>
+                </div>
+                <div class="pic">
+                  <img src="./assets/img/${cardinfo.png}" />
+                </div>`
+      $('.popup-center').html(html)
+      $('.popup').show()
+    })
+    // filter-categories-featuredshops-lightsource
+    function filter() {
+      filtered = allData.filter((item) => {
+        const a =
+          condition.categories == '' || condition.categories == item.categories
+        const b =
+          condition.featuredshops == '' ||
+          condition.featuredshops == item.featuredshops
+        return a && b
+      })
+      let box = document.querySelector('#contain')
+      let out = ''
+      let index = 0
+      for (let item of filtered) {
+        out += `<div class="card" index="${index++}">
+              <div class="photo" style="background-image:url('./assets/img/${
+                item.png
+              }')"></div>
               <div class="category">${item.categories}</div>
               <div class="description">${item.name}</div>
             </div>`
-        }
-        box.innerHTML = out
-      })
+      }
+      box.innerHTML = out
+    }
+    $('#catage li').click(function () {
+      condition.categories = $(this).attr('value')
+      $(this).addClass('active').siblings().removeClass('active')
+      filter()
+    })
+    $('#shop li').click(function () {
+      condition.featuredshops = $(this).attr('value')
+      $(this).addClass('active').siblings().removeClass('active')
+      filter()
+    })
+    $('#shop li').click(function () {
+      condition.featuredshops = $(this).attr('value')
+      $(this).addClass('active').siblings().removeClass('active')
+      filter()
+    })
   })
 </script>
