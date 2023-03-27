@@ -5,7 +5,7 @@
     "name": "endive",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "name": "squash",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "name": "green pepper",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "name": "celery",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "name": "bok choy",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "name": "Chinese cabbage",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "name": "green soy bean",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "name": "green leaves",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "name": "chinese celery",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "name": "kidney bean",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "name": "Chinese watermelon",
     "categories": "vegetable",
     "featuredshops": "Mr. Li Grocery",
-    "light source": "white"
+    "lightsource": "white"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "name": "persimmon",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "name": "apple",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "name": "pear",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "name": "peach",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "name": "kiwi",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "name": "banana",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "name": "dragon fruit",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "name": "sugar orange",
     "categories": "fruit",
     "featuredshops": "Antie Su Very fresh fruits",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "name": "chicken feet",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "red/White"
+    "lightsource": "red/White"
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@
     "name": "pork hind leg",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
     "name": "streaky pork",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@
     "name": "pig feet",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@
     "name": "pork ribs",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@
     "name": "pork shoulder",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@
     "name": "pork bone",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 27,
@@ -213,7 +213,7 @@
     "name": "fish fillet",
     "categories": "meat",
     "featuredshops": "butcher Wang",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@
     "name": "salmon",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "blue/red"
+    "lightsource": "blue/red"
   },
   {
     "id": 29,
@@ -229,7 +229,7 @@
     "name": "crucian carp",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   },
   {
     "id": 30,
@@ -237,7 +237,7 @@
     "name": "leopard coral grouper",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@
     "name": "clam",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@
     "name": "octopus",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   },
   {
     "id": 33,
@@ -261,7 +261,7 @@
     "name": "shrimp",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   },
   {
     "id": 34,
@@ -269,6 +269,6 @@
     "name": "silver carp",
     "categories": "seafood",
     "featuredshops": "great seafood",
-    "light source": "natural"
+    "lightsource": "natural"
   }
 ]

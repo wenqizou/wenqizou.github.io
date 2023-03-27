@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
       rel="stylesheet"
     />
@@ -88,6 +92,12 @@
       padding-right: 100px;
     }
 
+    @media screen and (max-width: 1200px) {
+      .content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     .light-bg {
       position: fixed;
       width: 100%;
@@ -151,6 +161,8 @@
       background-repeat: no-repeat;
       background-size: contain;
       cursor: pointer;
+    }
+    .content.gray .card .photo {
       -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
       filter: grayscale(100%);
     }
@@ -194,6 +206,43 @@
     }
     .popup-center .pic img {
       max-width: 500px;
+    }
+    .light-btn {
+      position: fixed;
+      cursor: pointer;
+      bottom: 150px;
+      left: 35px;
+      font-size: 12px;
+    }
+    .light-btn i {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .content {
+        padding-right: 0;
+      }
+      .menu {
+        width: calc(100vw - 40px);
+      }
+      .menu-wrap {
+        position: relative;
+        transform: translateY(0);
+      }
+      .card {
+        width: calc(50vw - 44px);
+      }
+      .card .photo {
+        width: 100%;
+      }
+      .popup-center {
+        flex-direction: column-reverse;
+      }
+      .popup-center .pic img {
+        max-width: 80vw;
+      }
     }
   </style>
   <body>
@@ -263,6 +312,12 @@
             <li light="light4">自然光/Neutral</li>
           </ul>
         </div>
+        <div class="light-btn" id="toggle">
+          <i class="fa-solid fa-toggle-on"></i>
+          <!-- <i class="fa-solid fa-toggle-off"></i> -->
+          <br />
+          <span>LIGHT ON/OFF</span>
+        </div>
       </div>
       <div class="content" id="contain"></div>
     </div>
@@ -316,6 +371,16 @@
         .addClass('light-bg ' + light)
     })
 
+    $('#toggle').click(function () {
+      let dom = $(this).find('i.fa-solid')
+      if (dom.hasClass('fa-toggle-on')) {
+        dom.removeClass('fa-toggle-on').addClass('fa-toggle-off')
+        $('#contain').addClass('gray')
+      } else {
+        dom.removeClass('fa-toggle-off').addClass('fa-toggle-on')
+        $('#contain').removeClass('gray')
+      }
+    })
     $('.popup').click(function () {
       $(this).hide()
     })
