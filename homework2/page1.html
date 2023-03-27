@@ -141,6 +141,9 @@
         margin-right: 20px;
         word-break: break-all;
       }
+      .gird-layout .card {
+        margin-right: 0;
+      }
       .card .photo {
         background: #ddd;
         width: 200px;
@@ -173,7 +176,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         text-align: center;
-        justify-content: center;
+        justify-items: center;
         align-items: center;
         margin: 0 auto;
         width: 1400px;
@@ -193,7 +196,7 @@
         <div class="filter-wrap">
           <!-- before -->
           <div class="filter-item">
-            <div class="selt">Genre</div>
+            <div class="selt" defalut="Genre">Genre</div>
             <div class="item-box" type="Genre">
               <span value="Dessert">Dessert</span>
               <span value="Lunch/Dinner">Lunch/Dinner</span>
@@ -204,7 +207,7 @@
             </div>
           </div>
           <div class="filter-item">
-            <div class="selt">Occasion</div>
+            <div class="selt" defalut="Occasion">Occasion</div>
             <div class="item-box" type="Applicableoccasions">
               <span value="Brunch">Brunch</span>
               <span value="Party">Party</span>
@@ -214,17 +217,17 @@
             </div>
           </div>
           <div class="filter-item">
-            <div class="selt">Time Spent</div>
+            <div class="selt" defalut="Time Spent">Time Spent</div>
             <div class="item-box" type="TimeSpent">
               <span value="30min">～ 30mins</span>
               <span value="30-1h">30 - 1h</span>
-              <span value="1-2 hour">1-2h</span>
+              <span value="1-2 h">1-2h</span>
               <span value="2h">2h</span>
               <span value=">2h">>2h</span>
             </div>
           </div>
           <div class="filter-item">
-            <div class="selt">Servings</div>
+            <div class="selt" defalut="Servings">Servings</div>
             <div class="item-box" type="Servings">
               <span value="1">1</span>
               <span value="1-2">1-2</span>
@@ -233,7 +236,7 @@
               <span value=">6">>6</span>
             </div>
           </div>
-          <div class="filter-item reset">Reset</div>
+          <div class="filter-item reset" id="reset">Reset</div>
         </div>
       </div>
       <div class="grid-containr">
@@ -255,13 +258,14 @@
   $(document).ready(function () {
     let list = []
     // mousescroll
-    $('.msg-box').click(() => {
-      window.location.href = './page2.html'
+    $('.grid-containr,.gird-layout').on('click', '.card', function () {
+      let name = $(this).attr('name')
+      window.location.href = './page2.html?name=' + encodeURI(name)
     })
     function buildhtml(row1) {
       let out = ''
       for (let item of row1) {
-        out += `<div class="card">
+        out += `<div class="card" name="${item.Name}">
               <div class="photo"><img src="./assets/Pic/${item.Picture}"></div>
               <div class="description">${item.Name}</div>
               <div class="category">${item.Genre}</div>
@@ -270,7 +274,7 @@
       }
       //second for scroll
       for (let item of row1) {
-        out += `<div class="card">
+        out += `<div class="card" name="${item.Name}">
               <div class="photo"><img src="./assets/Pic/${item.Picture}"></div>
               <div class="description">${item.Name}</div>
               <div class="category">${item.Genre}</div>
@@ -318,6 +322,21 @@
       filter()
     })
 
+    $('#reset').click(function () {
+      $('.selt').each(function () {
+        let defalut = $(this).attr('defalut')
+        $(this).text(defalut)
+      })
+      $('.item-box>span').removeClass('active')
+      condition = {
+        Genre: '',
+        Applicableoccasions: '',
+        TimeSpent: '',
+        Servings: ''
+      }
+      filter()
+    })
+
     function filter() {
       // grid fill
       let tmp = list.filter(function (item) {
@@ -335,7 +354,7 @@
 
       let out = ''
       for (let item of tmp) {
-        out += `<div class="card">
+        out += `<div class="card" name="${item.Name}">
               <div class="photo"><img src="./assets/Pic/${item.Picture}"></div>
               <div class="description">${item.Name}</div>
               <div class="category">${item.Genre}</div>

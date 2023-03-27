@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/jq.min.js"></script>
     <script src="./assets/font.js"></script>
   </head>
@@ -16,7 +22,8 @@
     html,
     body {
       height: 100%;
-      font-family: 'zen-kaku-gothic-antique', sans-serif;
+      /* font-family: 'zen-kaku-gothic-antique', sans-serif; */
+      font-family: 'Noto Sans JP', sans-serif;
       font-weight: 400;
       font-style: normal;
     }
@@ -107,17 +114,20 @@
     .bg {
       width: 50px;
       height: 50px;
-      top: 0;
-      right: 73px;
       position: absolute;
-      background: url(./assets/img/home1.png) no-repeat;
-      background-size: contain;
+      right: 73px;
     }
-    .bg.p2 {
+    .bg.p1 {
+      top: -11px;
       background: url(./assets/img/home2.png) no-repeat;
       background-size: contain;
-      top: -11px;
       transform: rotate(315deg);
+    }
+    .bg.p2 {
+      background: url(./assets/img/home1.png) no-repeat;
+      background-size: contain;
+      top: 0;
+      right: 83px;
     }
     .bg.p3 {
       background: url(./assets/img/home3.png) no-repeat;
@@ -132,35 +142,35 @@
           <div class="tips">
             <h1>
               歡迎光臨致民路菜市場
-              <div class="bg"></div>
+              <div class="bg p1"></div>
             </h1>
             <p>WELCOME TO ZHIMIN ROAD MARKET</p>
           </div>
           <div class="tips">
             <h1>
               歡迎光臨致民路菜市場
-              <div class="bg"></div>
+              <div class="bg p1"></div>
             </h1>
             <p>WELCOME TO ZHIMIN ROAD MARKET</p>
           </div>
           <div class="tips">
             <h1>
               歡迎光臨致民路菜市場
-              <div class="bg"></div>
+              <div class="bg p1"></div>
             </h1>
             <p>WELCOME TO ZHIMIN ROAD MARKET</p>
           </div>
           <div class="tips">
             <h1>
               歡迎光臨致民路菜市場
-              <div class="bg"></div>
+              <div class="bg p1"></div>
             </h1>
             <p>WELCOME TO ZHIMIN ROAD MARKET</p>
           </div>
-          <div class="tips">
+          <div class="tips p1">
             <h1>
               歡迎光臨致民路菜市場
-              <div class="bg"></div>
+              <div class="bg p1"></div>
             </h1>
             <p>WELCOME TO ZHIMIN ROAD MARKET</p>
           </div>
