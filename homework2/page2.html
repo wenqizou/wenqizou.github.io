@@ -111,6 +111,47 @@
         background-image: url('./assets//b.png');
         cursor: pointer;
       }
+      @media screen and (max-width: 1200px) {
+        .container {
+          width: 80vw;
+        }
+        .food-info {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .head {
+          font-size: 10vw;
+        }
+        .container {
+          width: 80vw;
+        }
+        .left .photo {
+          width: 100%;
+          height: auto;
+          font-size: 0;
+        }
+        .right .adjust {
+          width: 100%;
+        }
+        .right .adjust li {
+          font-size: 5vw;
+        }
+        .food-step .side {
+          width: 10vw;
+          flex: 0 0 80px;
+          font-size: 38px;
+        }
+        .side > div {
+          margin-top: 31px;
+        }
+        .food-info {
+          flex-direction: column;
+        }
+        .side-detail {
+          font-size: 2vw;
+        }
+      }
     </style>
   </head>
   <body>

@@ -75,6 +75,8 @@
       .selt {
         font-size: 35px;
         line-height: 40px;
+        white-space: nowrap;
+        word-break: break-all;
       }
       .item-box {
         display: none;
@@ -186,6 +188,61 @@
         box-sizing: border-box;
         min-height: 334px;
         margin-bottom: 30px;
+      }
+      @media screen and (max-width: 1400px) {
+        .choose-box {
+          width: 85vw;
+          padding: 20px;
+          margin: 80px auto;
+        }
+        .filter-wrap {
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: space-around;
+        }
+        .filter-item {
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+        .grid-containr {
+          width: 90vw;
+        }
+        .gird-layout {
+          width: 90vw;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .filter-wrap {
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: flex-start;
+        }
+        .filter-item {
+          margin-right: 20px;
+        }
+        .gird-layout {
+          width: 90vw;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .head {
+          font-size: 10vw;
+        }
+        .gird-layout {
+          width: 90vw;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .gird-layout .card {
+          min-width: 30vw;
+          min-height: auto;
+          width: 30vw;
+        }
+        .gird-layout .card .photo {
+          width: 100%;
+          height: auto;
+        }
       }
     </style>
   </head>
