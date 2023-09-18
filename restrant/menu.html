@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>和煦</title>
+    <script src="./jq.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylemenu.css" />
+  </head>
+  <body>
+    <div class="layout-container">
+      <header class="layout-header">
+        <nav class="navlist topmenu">
+          <a class="Layout_activeNavLink__2i0qW" href="/menu">Menu</a>
+          <a class="">Order Now</a>
+          <a href="">Reservation</a>
+          <a href="">Events</a>
+          <a href="">Catering</a>
+          <a href="">Gift Card</a>
+        </nav>
+        <div class="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a href="/index"><div class="logo"></div></a>
+      </header>
+      <main class="layout-body">
+        <aside class="menu_categoryNav">
+          <!-- fetch json get  -->
+          <nav class="navlink" id="navLink">
+            <div class="categoryLink">
+              <a href="#Beer啤酒">Beer 啤酒</a>
+            </div>
+            <!-- <div class="categoryLink">
+              <a href="#Sake清酒">Sake 清酒</a>
+            </div>-->
+          </nav>
+        </aside>
+        <div id="main-body"></div>
+        <aside class="menu_categoryNav_bottom">
+          <nav class="navlink_bottom" id="navlink_bottom"></nav>
+        </aside>
+      </main>
+      <footer>
+        <div class="pc-footer-left">
+          <div class="text-1">
+            <p>
+              Mon - Thur<br />
+              12 – 3:30pm<br />
+              5 – 10pm
+            </p>
+            <p>
+              Fri - Sat<br />
+              12 – 10:30pm
+            </p>
+            <p>
+              Sun<br />
+              12 – 10pm
+            </p>
+          </div>
+          <div class="text-2">
+            <p>
+              Lunch Special<br />
+              12 – 3:30pm<br />
+              Monday to Friday
+            </p>
+            <p>
+              Happy Hour 🥂<br />
+              12 – 6pm
+            </p>
+          </div>
+        </div>
+        <div class="pc-footer-center">
+          <p>595 Manhattan Ave, Brooklyn, NY, 11222</p>
+          <p>212-718-0797</p>
+          <p>Service@breezebk.com</p>
+          <p>
+            Website Design by Hanyu Tao<br />
+            (hytaodesign@gmail.com)
+          </p>
+        </div>
+        <div class="pc-footer-right">
+          <p>Work with us</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script>
+  function uniqueFunc(arr, uniId) {
+    const res = new Map()
+    return arr.filter(
+      (item) => !res.has(item[uniId]) && res.set(item[uniId], 1)
+    )
+  }
+  function menuBycategory(arr, category) {
+    return arr.filter((e) => e.category == category)
+  }
+  function joinMenuInfo(arr, category) {
+    const spicytxt = (spicy) => {
+      return spicy
+        .split('')
+        .map((e) => `<i class="spicy_icon"></i>`)
+        .join('')
+    }
+    const filterRst = menuBycategory(...arguments)
+    return filterRst
+      .map(
+        (e) => `<div class="menu_item">
+                  <div class="menu_itemTitleRow">
+                    <h4 style="font-weight:bold;">${
+                      e['Chinese name'] ? e['Chinese name'] : e.name
+                    }</h4>
+                    <div class="menu_itemTags">
+                      <span class="spicy">${spicytxt(e.spicy)}</span>
+                      <span>${e.price}</span>
+                    </div>
+                  </div>
+                  ${e['Chinese name'] ? '<h4>' + e.name + '</h4>' : ''}
+                  <div class="menu_itemDescription">${e.description}</div>
+                </div>`
+      )
+      .join('')
+  }
+  function isInView(el) {
+    const clientHeight = document.body.clientHeight
+    let rect = el.getBoundingClientRect()
+    let elTop = rect.top
+    let elBottom = rect.bottom
+    return elTop <= 200 && elBottom > 0
+  }
+
+  $(document).ready(function () {
+    let raf = null
+    window
+      .fetch('./data.json')
+      .then(function (response) {
+        return response.json()
+      })
+      .then((res) => {
+        const key = 'category chinese'
+        let menus = res.map((e) => ({
+          enName: `${e.category}`,
+          znName: `${e[key]}`
+        }))
+        const menuList = uniqueFunc(menus, 'enName')
+        $('#navLink,#navlink_bottom').html(
+          menuList.map(
+            (e) => `<div class="categoryLink">
+                <a href="#${e.enName.trim()}${e.znName.trim()}">${e.enName} ${
+              e.znName
+            }</a>
+              </div>`
+          )
+        )
+        // section
+        const sections = menuList.map(
+          (e) =>
+            `<section id="${e.enName.trim()}${e.znName.trim()}" class="menu_category">
+                <h2>
+                  <div class="menu_categoryNameEn">${e.enName}</div>
+                  <div class="menu_categoryNameZh">${e.znName}</div>
+                </h2>
+                <div class="menu_categoryItemsContainer">
+                  <div class="menu_subCategory">
+                    ${joinMenuInfo(res, e.enName)}
+                  </div>
+              </section>`
+        )
+        $('#main-body').html(sections.join(''))
+        // nav click
+        $('#navlink_bottom .categoryLink').click(() => {
+          $(this).addClass('active').siblings().removeClass('active')
+          window.lock = true
+          const st = Date.now()
+          window.cancelAnimationFrame(raf)
+          const dealFlag = () => {
+            const et = Date.now()
+            const time = et - st
+            if (time < 1000) {
+              raf = window.requestAnimationFrame(dealFlag)
+            } else {
+              window.lock = false
+              const rate =
+                document.documentElement.scrollTop / document.body.scrollHeight
+              const diff = rate * $('.menu_categoryNav_bottom')[0].scrollWidth
+              $('.menu_categoryNav_bottom').scrollLeft(diff)
+            }
+          }
+        })
+        window.onscroll = () => {
+          const scrollTop = document.documentElement.scrollTop
+          $('.menu_category').each((i, e) => {
+            if (isInView(e)) {
+              $('#navlink_bottom .categoryLink').removeClass('active')
+              const dom = $('#navlink_bottom .categoryLink').eq(i)
+              dom.addClass('active')
+            }
+          })
+          const rate =
+            document.documentElement.scrollTop / document.body.scrollHeight
+          const diff = rate * $('.menu_categoryNav_bottom')[0].scrollWidth
+          if (!window.lock) {
+            $('.menu_categoryNav_bottom').scrollLeft(diff)
+          }
+        }
+      })
+    $('.menu-toggle').click(() => {
+      const dom = $('.navlist.topmenu')
+      if (dom.hasClass('toggled')) {
+        dom.removeClass('toggled')
+      } else {
+        dom.addClass('toggled')
+      }
+    })
+  })
+</script>
