@@ -305,6 +305,16 @@ footer::after {
   .menu-toggle {
     display: block;
   }
+  .navlist.topmenu a {
+    height: 70px;
+    line-height: 70px!important;
+    text-align: center;
+    width: 100vw!important;
+    text-decoration: underline;
+  }
+  .navlist.topmenu a:hover {
+    transform: translateY(-0);
+  }
   .layout-body {
     display: block;
   }
