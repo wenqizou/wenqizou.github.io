@@ -1,5 +1,5 @@
 :root {
-  --cream: #fff2cf;
+  --cream: #edd899;
   --crimson: #89303f;
   --indigo: #23386b;
   --color-light: var(--cream);
@@ -22,7 +22,8 @@ html {
   padding: 0;
   margin: 0;
   background: var(--color-light);
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Koku Mincho';
+  /* font-family: 'Raleway', sans-serif; */
   scroll-behavior: smooth;
 }
 * {
@@ -84,6 +85,47 @@ a {
 .navlist.topmenu.toggled a:last-child {
   padding-bottom: 30px;
 }
+.navlist.topmenu a {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  transform: translateY(-0);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.navlist.topmenu a:hover {
+  transform: translateY(-6px);
+}
+.navlist.topmenu .menu-1 {
+  width: 110px;
+  background: url(./images/menu-1.png) no-repeat center center;
+  background-size: 100%;
+}
+.navlist.topmenu .menu-2 {
+  width: 148px;
+  background: url(./images/menu-2.png) no-repeat center center;
+  background-size: 100%;
+}
+.navlist.topmenu .menu-3 {
+  width: 120px;
+  background: url(./images/menu-3.png) no-repeat center center;
+  background-size: 100%;
+}
+.navlist.topmenu .menu-4 {
+  width: 100px;
+  background: url(./images/menu-4.png) no-repeat center center;
+  background-size: 100%;
+}
+.navlist.topmenu .menu-5 {
+  width: 150px;
+  background: url(./images/menu-5.png) no-repeat center center;
+  background-size: 100%;
+}
+.navlist.topmenu .menu-6 {
+  width: 120px;
+  background: url(./images/menu-6.png) no-repeat center center;
+  background-size: 100%;
+}
 .menu-toggle div {
   width: 100%;
   height: 4px;
@@ -109,9 +151,9 @@ a {
   grid-gap: 2em;
   gap: 2em;
 }
-.navlist a:hover {
+/* .navlist a:hover {
   text-decoration: underline;
-}
+} */
 .menu_categoryNav {
   --category-nav-padding-top: 1em;
   padding-top: var(--category-nav-padding-top);
@@ -238,6 +280,9 @@ footer::after {
 .pc-footer-left .text-1 {
   margin-right: 20px;
 }
+.link-a:hover{
+  text-decoration: underline;
+}
 @media (min-width: 1500px) {
   .layout-body {
     grid-template-columns: 1fr 3fr;
@@ -246,6 +291,11 @@ footer::after {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+  }
+}
+@media (max-width: 1200px) {
+  .navlist {
+    grid-gap: 0em;
   }
 }
 @media (max-width: 840px) {
@@ -282,7 +332,7 @@ footer::after {
   .menu-toggle div:nth-child(3) {
     top: calc(100% - 2px);
   }
-  footer{
+  footer {
     flex-direction: column;
   }
 }

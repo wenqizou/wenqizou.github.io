@@ -9,22 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Nanum+Gothic&family=Raleway:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./stylemenu.css" />
   </head>
   <body>
     <div class="layout-container">
       <header class="layout-header">
         <nav class="navlist topmenu">
+          <a class="menu-1" href="/menu">ORDER</a>
+          <a class="menu-2">RESERVATION</a>
+          <a class="menu-6">MENU</a>
+          <a class="menu-4">EVENT</a>
+          <a class="menu-5">CATERING</a>
+          <a class="menu-3">GIFT CARD</a>
+        </nav>
+        <!-- <nav class="navlist topmenu">
           <a class="Layout_activeNavLink__2i0qW" href="/menu">Menu</a>
           <a class="">Order Now</a>
           <a href="">Reservation</a>
           <a href="">Events</a>
           <a href="">Catering</a>
           <a href="">Gift Card</a>
-        </nav>
+        </nav> -->
         <div class="menu-toggle">
           <div></div>
           <div></div>
@@ -79,16 +88,30 @@
           </div>
         </div>
         <div class="pc-footer-center">
-          <p>595 Manhattan Ave, Brooklyn, NY, 11222</p>
-          <p>212-718-0797</p>
-          <p>Service@breezebk.com</p>
-          <p>
-            Website Design by Hanyu Tao<br />
-            (hytaodesign@gmail.com)
+          <p class="link-a">
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Breeze/@40.7230058,-73.9531898,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25970c517236b:0x2d75b68e8f548dab!8m2!3d40.7230018!4d-73.9506149!16s%2Fg%2F11vbjff2zs?entry=ttu"
+              >595 Manhattan Ave, Brooklyn, NY, 11222</a
+            >
+          </p>
+          <p class="link-a"><a href="tel://212-718-0797">212-718-0797</a></p>
+          <p class="link-a">
+            <a href="mailto:hytaodesign@gmail.com">Service@breezebk.com</a>
           </p>
         </div>
         <div class="pc-footer-right">
           <p>Work with us</p>
+          <div class="ins">
+            <a target="_blank" href="https://www.instagram.com/breezehexu/"
+              ><img src="./images/ins-mobile.png" alt="" width="60"
+            /></a>
+          </div>
+          <p>
+            Website Design by<br />
+            Hanyu Tao<br />
+            (hytaodesign@gmail.com)
+          </p>
         </div>
       </footer>
     </div>
@@ -195,6 +218,7 @@
               $('.menu_categoryNav_bottom').scrollLeft(diff)
             }
           }
+          raf = window.requestAnimationFrame(dealFlag)
         })
         window.onscroll = () => {
           const scrollTop = document.documentElement.scrollTop

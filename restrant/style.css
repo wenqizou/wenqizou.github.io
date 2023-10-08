@@ -24,7 +24,7 @@ a {
 html,
 body {
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Koku Mincho';
   font-size: 1.2rem;
 }
 body {
@@ -66,7 +66,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  font-size: 26px;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -163,12 +163,16 @@ body {
   height: 1px;
   background: url(./images/line.png);
 }
+.link-a:hover{
+  text-decoration: underline;
+}
 .pc-footer {
   padding: 46px 9vw 50px;
   display: flex;
   font-size: 20px;
   font-weight: 600;
   justify-content: space-between;
+  text-align: center;
 }
 .pc-footer-left {
   display: flex;
@@ -183,12 +187,15 @@ body {
 .text-4 {
   width: auto;
 }
+.pc-footer-right .ins img{
+  width: 60px;
+}
 
 /*mobile*/
 .mobile {
   position: relative;
   display: none;
-  padding: 10vh 10vw;
+  padding: 10vh 10vw 10vh;
   height: 100vh;
   box-sizing: border-box;
 }
@@ -239,11 +246,35 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.mobile-footer{
+  margin-top:-2vh;
+  display: none;
+  padding: 4vh 6vw;
+  font-size: .8rem;
+  color: #edd899;
+  background: #784d28;
+}
+.mobile-footer a{
+  color: #edd899;
+}
+.mobile-footer-top{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mobile-footer-top .text-1{
+  margin-right: 6vw;
+}
+.mobile-footer .ins{
+  margin-bottom: 5vh;
+}
+.mobile-footer .ins img{
+  width: 10vw;
+}
 @media screen and (max-width: 750px) {
   .pc {
     display: none;
   }
-  .mobile {
+  .mobile, .mobile-footer {
     display: block;
   }
 }
@@ -415,7 +446,7 @@ body {
 }
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .pc-body .menu-text {
-    font-size: 22px;
+    font-size: .9rem;
   }
   .pc-body-one {
     margin-bottom: -49px;
@@ -453,7 +484,7 @@ body {
 }
 @media screen and (min-width: 1500px) and (max-width: 1600px) {
   .pc-body .menu-text {
-    font-size: 22px;
+    font-size: 1rem;
   }
   .pc-body-three .menu {
     top: 230px;
