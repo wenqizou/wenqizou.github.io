@@ -172,10 +172,30 @@
         const key = 'category chinese'
         let menus = res.map((e) => ({
           enName: `${e.category}`,
-          znName: `${e[key]}`
+          znName: `${e[key]}`,
+          mainCate: e.maincategory
         }))
         const menuList = uniqueFunc(menus, 'enName')
-        $('#navLink,#navlink_bottom').html(
+        const cates = uniqueFunc(menus, 'mainCate')
+        console.log(cates, menuList)
+        $('#navLink').html(
+          cates.map(
+            (e) => `<div class="categoryLink">
+                <div>${e.mainCate}</div>
+                <div class="subcategory">
+                   ${menuList
+                     .filter((menu) => menu.mainCate == e.mainCate)
+                     .map(
+                       (e) =>
+                         `<a href="#${e.enName.trim()}${e.znName.trim()}">${
+                           e.enName
+                         } ${e.znName}</a>`
+                     ).join('')}
+                </div>
+              </div>`
+          )
+        )
+        $('#navlink_bottom').html(
           menuList.map(
             (e) => `<div class="categoryLink">
                 <a href="#${e.enName.trim()}${e.znName.trim()}">${e.enName} ${

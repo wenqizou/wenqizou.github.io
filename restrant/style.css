@@ -239,11 +239,11 @@ body {
 .mobile-body ul li {
   margin-bottom: 1vh;
   font-size: 1rem;
-  color: #fff;
+  color: #EDD899;
   list-style-type: none;
 }
 .mobile-body ul li a {
-  color: #fff;
+  color: #EDD899;
   text-decoration: none;
 }
 .mobile-footer{
@@ -263,9 +263,6 @@ body {
 }
 .mobile-footer-top .text-1{
   margin-right: 6vw;
-}
-.mobile-footer .ins{
-  margin-bottom: 5vh;
 }
 .mobile-footer .ins img{
   width: 10vw;

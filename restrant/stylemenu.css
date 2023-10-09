@@ -78,8 +78,13 @@ a {
   background: rgba(0, 0, 0, 0.3);
 }
 .navlist.topmenu.toggled a {
+  color: #784d28;
+  font-size: 1.2rem;
+  font-weight: bold;
   background: var(--cream);
   line-height: 3em;
+  margin: -1px;
+  border: none;
   padding: 0 var(--page-padding-h);
 }
 .navlist.topmenu.toggled a:last-child {
@@ -164,6 +169,19 @@ a {
   top: calc(var(--header-h) + var(--category-nav-padding-top));
 }
 .categoryLink {
+  margin-bottom: 1em;
+}
+.categoryLink div:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.categoryLink .subcategory {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+}
+.categoryLink .subcategory a{
   margin-bottom: 1em;
 }
 .categoryLink a:hover {
@@ -280,7 +298,7 @@ footer::after {
 .pc-footer-left .text-1 {
   margin-right: 20px;
 }
-.link-a:hover{
+.link-a:hover {
   text-decoration: underline;
 }
 @media (min-width: 1500px) {
@@ -307,9 +325,9 @@ footer::after {
   }
   .navlist.topmenu a {
     height: 70px;
-    line-height: 70px!important;
+    line-height: 70px !important;
     text-align: center;
-    width: 100vw!important;
+    width: 100vw !important;
     text-decoration: underline;
   }
   .navlist.topmenu a:hover {

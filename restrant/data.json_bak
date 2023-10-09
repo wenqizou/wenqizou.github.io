@@ -9,7 +9,6 @@
     "category chinese": "畅饮",
     "sub category": "Rose",
     "price": 11,
-    "maincategory": "HAPPY HOUR 畅饮",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -24,7 +23,6 @@
     "category chinese": "畅饮",
     "sub category": "White",
     "price": 9,
-    "maincategory": "HAPPY HOUR 畅饮",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -39,7 +37,6 @@
     "category chinese": "畅饮",
     "sub category": "Draught",
     "price": 6,
-    "maincategory": "HAPPY HOUR 畅饮",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -54,7 +51,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -69,7 +65,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -84,7 +79,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -99,7 +93,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -114,7 +107,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -129,7 +121,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -144,7 +135,6 @@
     "category chinese": "鸡尾酒",
     "sub category": "",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -159,7 +149,6 @@
     "category chinese": "",
     "sub category": "",
     "price": 88,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -174,7 +163,6 @@
     "category chinese": "",
     "sub category": "",
     "price": 40,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -189,7 +177,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Sparkling",
     "price": "16/64",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -204,7 +191,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Sparkling",
     "price": "12/40",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -219,7 +205,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Sparkling",
     "price": 98,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -234,7 +219,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Rose",
     "price": "16/64",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -249,7 +233,6 @@
     "category chinese": "葡萄酒",
     "sub category": "White",
     "price": "12/48",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -264,7 +247,6 @@
     "category chinese": "葡萄酒",
     "sub category": "White",
     "price": "15/60",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -279,7 +261,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Red",
     "price": "12/48",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -294,7 +275,6 @@
     "category chinese": "葡萄酒",
     "sub category": "Red",
     "price": "20/80",
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -309,7 +289,6 @@
     "category chinese": "清酒",
     "sub category": "",
     "price": 9,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -324,7 +303,6 @@
     "category chinese": "清酒",
     "sub category": "",
     "price": 24,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -339,7 +317,6 @@
     "category chinese": "啤酒",
     "sub category": "Draught",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -354,7 +331,6 @@
     "category chinese": "啤酒",
     "sub category": "Draught",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -369,7 +345,6 @@
     "category chinese": "啤酒",
     "sub category": "Bottle",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -384,7 +359,6 @@
     "category chinese": "啤酒",
     "sub category": "Bottle",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -399,7 +373,6 @@
     "category chinese": "烈酒",
     "sub category": "Vodka",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -414,7 +387,6 @@
     "category chinese": "烈酒",
     "sub category": "Vodka",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -429,7 +401,6 @@
     "category chinese": "烈酒",
     "sub category": "Vodka",
     "price": 10,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -444,7 +415,6 @@
     "category chinese": "烈酒",
     "sub category": "Vodka",
     "price": 9,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -459,7 +429,6 @@
     "category chinese": "烈酒",
     "sub category": "RYE WHISKEY",
     "price": 12,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -474,7 +443,6 @@
     "category chinese": "烈酒",
     "sub category": "RYE WHISKEY",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -489,7 +457,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 15,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -504,7 +471,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 57,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -519,7 +485,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 25,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -534,7 +499,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 21,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -549,7 +513,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 18,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -564,7 +527,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 94,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -579,7 +541,6 @@
     "category chinese": "烈酒",
     "sub category": "SCOTCH",
     "price": 27,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -594,7 +555,6 @@
     "category chinese": "烈酒",
     "sub category": "IRISH WHISKEY",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -609,7 +569,6 @@
     "category chinese": "烈酒",
     "sub category": "IRISH WHISKEY",
     "price": 14,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -624,7 +583,6 @@
     "category chinese": "烈酒",
     "sub category": "IRISH WHISKEY",
     "price": 41,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -639,7 +597,6 @@
     "category chinese": "烈酒",
     "sub category": "IRISH WHISKEY",
     "price": 16,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -654,7 +611,6 @@
     "category chinese": "烈酒",
     "sub category": "GIN",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -669,7 +625,6 @@
     "category chinese": "烈酒",
     "sub category": "GIN",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -684,7 +639,6 @@
     "category chinese": "烈酒",
     "sub category": "GIN",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -699,7 +653,6 @@
     "category chinese": "烈酒",
     "sub category": "GIN",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -714,7 +667,6 @@
     "category chinese": "烈酒",
     "sub category": "BOURBON",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -729,7 +681,6 @@
     "category chinese": "烈酒",
     "sub category": "BOURBON",
     "price": 14,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -744,7 +695,6 @@
     "category chinese": "烈酒",
     "sub category": "BOURBON",
     "price": 14,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -759,7 +709,6 @@
     "category chinese": "烈酒",
     "sub category": "BOURBON",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -774,7 +723,6 @@
     "category chinese": "烈酒",
     "sub category": "BOURBON",
     "price": 17,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -789,7 +737,6 @@
     "category chinese": "烈酒",
     "sub category": "TEQUILA",
     "price": 17,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -804,7 +751,6 @@
     "category chinese": "烈酒",
     "sub category": "TEQUILA",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -819,7 +765,6 @@
     "category chinese": "烈酒",
     "sub category": "TEQUILA",
     "price": 22,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -834,7 +779,6 @@
     "category chinese": "烈酒",
     "sub category": "RUM",
     "price": 10,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -849,7 +793,6 @@
     "category chinese": "烈酒",
     "sub category": "RUM",
     "price": 11,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -864,7 +807,6 @@
     "category chinese": "茶饮",
     "sub category": "",
     "price": 6,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -879,7 +821,6 @@
     "category chinese": "茶饮",
     "sub category": "",
     "price": 8,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -894,7 +835,6 @@
     "category chinese": "茶饮",
     "sub category": "",
     "price": 9,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -909,7 +849,6 @@
     "category chinese": "软饮",
     "sub category": "",
     "price": 5,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -924,7 +863,6 @@
     "category chinese": "软饮",
     "sub category": "",
     "price": 10,
-    "maincategory": "DRINK 饮品",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -939,7 +877,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -954,7 +891,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": "s"
@@ -969,7 +905,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -984,7 +919,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": "s"
@@ -999,7 +933,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 15,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1014,7 +947,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1029,7 +961,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 15,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1044,7 +975,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 15,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1059,7 +989,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1074,7 +1003,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 15,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1089,7 +1017,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1104,7 +1031,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1119,7 +1045,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1134,7 +1059,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 15,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": ""
@@ -1149,7 +1073,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1164,7 +1087,6 @@
     "category chinese": "凉菜",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1179,7 +1101,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1194,7 +1115,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1209,7 +1129,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": ""
@@ -1224,7 +1143,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1239,7 +1157,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 9,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1254,7 +1171,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 8,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1269,7 +1185,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1284,7 +1199,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1299,7 +1213,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 10,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1314,7 +1227,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 9,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1329,7 +1241,6 @@
     "category chinese": "点心",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1344,7 +1255,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 58,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": ""
@@ -1359,7 +1269,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 20,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "sss"
@@ -1374,7 +1283,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 58,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1389,7 +1297,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 34,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1404,7 +1311,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 42,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1419,7 +1325,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 36,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1434,7 +1339,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 38,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1449,7 +1353,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 32,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1464,7 +1367,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 18,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1479,7 +1381,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 22,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1494,7 +1395,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 20,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1509,7 +1409,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 22,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1524,7 +1423,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 24,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1539,7 +1437,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 29,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1554,7 +1451,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 19,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1569,7 +1465,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1584,7 +1479,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 24,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1599,7 +1493,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 18,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": "s"
@@ -1614,7 +1507,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 18,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1629,7 +1521,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1644,7 +1535,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 22,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "sss"
@@ -1659,7 +1549,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 22,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1674,7 +1563,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 20,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1689,7 +1577,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 28,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -1704,7 +1591,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 24,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "sss"
@@ -1719,7 +1605,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 19,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1734,7 +1619,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 38,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1749,7 +1633,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 18,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1764,7 +1647,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 30,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": "s"
@@ -1779,7 +1661,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 20,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": ""
@@ -1794,7 +1675,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": 40,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "ss"
@@ -1809,7 +1689,6 @@
     "category chinese": "私房菜",
     "sub category": "",
     "price": "",
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "ss"
@@ -1824,7 +1703,6 @@
     "category chinese": "米饭",
     "sub category": "",
     "price": 2,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1839,7 +1717,6 @@
     "category chinese": "米饭",
     "sub category": "",
     "price": 3,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1854,7 +1731,6 @@
     "category chinese": "米饭",
     "sub category": "",
     "price": 12,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1869,7 +1745,6 @@
     "category chinese": "米饭",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "gf",
     "spicy": ""
@@ -1884,7 +1759,6 @@
     "category chinese": "米饭",
     "sub category": "",
     "price": 16,
-    "maincategory": "FOOD 食物",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
@@ -1899,7 +1773,6 @@
     "category chinese": "甜点",
     "sub category": "",
     "price": 8,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1914,7 +1787,6 @@
     "category chinese": "甜点",
     "sub category": "",
     "price": 9,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "gf",
     "spicy": ""
@@ -1929,7 +1801,6 @@
     "category chinese": "甜点",
     "sub category": "",
     "price": 8,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1944,7 +1815,6 @@
     "category chinese": "甜点",
     "sub category": "",
     "price": 9,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1959,7 +1829,6 @@
     "category chinese": "甜点",
     "sub category": "",
     "price": 8,
-    "maincategory": "FOOD 食物",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -1974,7 +1843,6 @@
     "category chinese": "午餐",
     "sub category": "",
     "price": 16,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -1989,7 +1857,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 16,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -2004,7 +1871,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 16,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -2019,7 +1885,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 18,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -2034,7 +1899,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 17,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -2049,7 +1913,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 18,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -2064,7 +1927,6 @@
     "category chinese": "午餐便当",
     "sub category": "",
     "price": 17,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": "s"
@@ -2079,7 +1941,6 @@
     "category chinese": "午餐便当",
     "sub category": "Rice",
     "price": "",
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -2094,7 +1955,6 @@
     "category chinese": "午餐便当",
     "sub category": "Rice",
     "price": 1,
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -2109,7 +1969,6 @@
     "category chinese": "午餐便当",
     "sub category": "Sides",
     "price": "",
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -2124,7 +1983,6 @@
     "category chinese": "午餐便当",
     "sub category": "Sides",
     "price": "",
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": "s"
@@ -2139,7 +1997,6 @@
     "category chinese": "午餐便当",
     "sub category": "Dim Sum",
     "price": "",
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "v",
     "glutenfree": "",
     "spicy": ""
@@ -2154,7 +2011,6 @@
     "category chinese": "午餐便当",
     "sub category": "Dim Sum",
     "price": "",
-    "maincategory": "LUNCH 特时午餐",
     "vegetarian": "",
     "glutenfree": "",
     "spicy": ""
