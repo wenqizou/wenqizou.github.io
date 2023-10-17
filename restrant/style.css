@@ -24,7 +24,7 @@ a {
 html,
 body {
   margin: 0;
-  font-family: 'Koku Mincho';
+  font-family: "hellofont-id-mingkebenwans", sans-serif;
   font-size: 1.2rem;
 }
 body {
@@ -54,11 +54,29 @@ body {
 .pc-body .menu:hover {
   transform: translateY(-10px);
 }
+.menu-1 img {
+  width: 110px;
+}
+.menu-2 img {
+  width: 150px;
+}
+.menu-3 img {
+  width: 120px;
+}
+.menu-4 img {
+  width: 100px;
+}
+.menu-5 img {
+  width: 130px;
+}
+.menu-6 img {
+  width: 110px;
+}
 .pc-body span {
   position: relative;
 }
 .pc-body .menu-bg {
-  width: 100%;
+  
 }
 .pc-body .menu-text {
   position: absolute;
@@ -66,11 +84,11 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  font-size: 1rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
 }
 /*one---start*/
 .pc-body-one {
@@ -78,9 +96,8 @@ body {
   margin-bottom: -5vh;
 }
 .pc-body-one .menu {
-  top: -10vh;
-  left: 6vw;
-  width: 8.5vw;
+  top: -60px;
+  left: 4vw;
 }
 /*one---end*/
 
@@ -92,9 +109,8 @@ body {
   z-index: 2;
 }
 .pc-body-two .menu {
-  top: 16vh;
-  left: 0vw;
-  width: 11.9vw;
+  top: -50px;
+  left: 2vw;
 }
 
 /*two---end*/
@@ -115,9 +131,8 @@ body {
   z-index: 2;
 }
 .pc-body-three .menu {
-  top: 22vh;
-  left: 10.6vw;
-  width: 9.54vw;
+  top: 28%;
+  left: 13vw;
 }
 /*three---end*/
 
@@ -128,9 +143,8 @@ body {
   width: 29vw;
 }
 .pc-body-four .menu {
-  top: 28vh;
+  top: 0;
   right: 1.5vw;
-  width: 8.4vw;
 }
 /*four---end*/
 
@@ -141,14 +155,12 @@ body {
   width: 30vw;
 }
 .pc-body-five .menu-5 {
-  top: 23vh;
-  left: 4.5vw;
-  width: 11.2vw;
+  top: 50px;
+  left: 6.5vw;
 }
 .pc-body-five .menu-6 {
-  top: 16vh;
-  right: 1.5vw;
-  width: 9vw;
+  top: -30px;
+  right: 2.5vw;
 }
 /*five---end*/
 .pc-body div .img {
@@ -163,13 +175,13 @@ body {
   height: 1px;
   background: url(./images/line.png);
 }
-.link-a:hover{
+.link-a:hover {
   text-decoration: underline;
 }
 .pc-footer {
   padding: 46px 9vw 50px;
   display: flex;
-  font-size: 20px;
+  font-size: 0.8rem;
   font-weight: 600;
   justify-content: space-between;
   text-align: center;
@@ -187,8 +199,8 @@ body {
 .text-4 {
   width: auto;
 }
-.pc-footer-right .ins img{
-  width: 60px;
+.pc-footer-right .ins img {
+  width: 40px;
 }
 
 /*mobile*/
@@ -211,13 +223,13 @@ body {
   width: 40vw;
 }
 .mobile .flower {
-  bottom: 0;
-  width: 65vw;
+  bottom: 20vh;
+  width: 50vw;
 }
 .mobile .rice {
-  left: 1.8vw;
-  bottom: 6vh;
-  width: 68.8vw;
+  left: 1.1vw;
+  bottom: 9.6vh;
+  width: 64vw;
 }
 .mobile-body {
   width: 80vw;
@@ -225,107 +237,77 @@ body {
   background: #784d28;
 }
 .mobile-body .logo {
-  width: 33vw;
+  width: 23vw;
   margin-left: 1.8vw;
   margin-top: 1.4vh;
 }
 .mobile-body ul {
   margin-bottom: 0;
   margin-top: 6vh;
-  padding-left: 26vw;
+  /* padding-left: 26vw; */
+  padding-inline-start: 0;
   position: relative;
   z-index: 9999;
 }
 .mobile-body ul li {
-  margin-bottom: 1vh;
+  margin-bottom: 2.5vh;
   font-size: 1rem;
-  color: #EDD899;
+  color: #edd899;
   list-style-type: none;
+  text-align: center;
 }
 .mobile-body ul li a {
-  color: #EDD899;
+  color: #edd899;
   text-decoration: none;
 }
-.mobile-footer{
-  margin-top:-2vh;
+.mobile-footer {
+  margin-top: -2vh;
   display: none;
   padding: 4vh 6vw;
-  font-size: .8rem;
+  font-size: .9rem;
   color: #edd899;
   background: #784d28;
 }
-.mobile-footer a{
+.mobile-footer a {
   color: #edd899;
 }
-.mobile-footer-top{
+.mobile-footer-top {
   display: flex;
   flex-wrap: nowrap;
 }
-.mobile-footer-top .text-1{
+.mobile-footer-top .text-1 {
   margin-right: 6vw;
 }
-.mobile-footer .ins img{
+.mobile-footer .ins img {
   width: 10vw;
 }
 @media screen and (max-width: 750px) {
   .pc {
     display: none;
   }
-  .mobile, .mobile-footer {
+  .mobile,
+  .mobile-footer {
     display: block;
   }
 }
 
 @media screen and (min-width: 750px) and (max-width: 1859px) {
-  .pc-body .menu-text {
-    font-size: 18px;
-  }
   .pc-body-one {
     margin-bottom: -26px;
   }
-  .pc-body-one .menu {
-    top: -50px;
-    left: 4.5vw;
-    width: 10vw;
-  }
   .pc-body-two {
     margin-bottom: -10px;
-  }
-  .pc-body-two .menu {
-    top: -45px;
-    left: -1vw;
-    width: 14vw;
   }
 
   .pc-body-three .logo {
     top: 20px;
   }
-  .pc-body-three .menu {
-    top: 110px;
-    left: 10vw;
-    width: 10.5vw;
-  }
   .pc-body-four {
     margin-bottom: -14px;
-  }
-  .pc-body-four .menu {
-    top: -20px;
-    right: 1vw;
-    width: 9.5vw;
   }
   .pc-body-five {
     margin-left: -5vw;
     margin-bottom: -22px;
-  }
-  .pc-body-five .menu-5 {
-    top: -5px;
-    left: 4vw;
-    width: 13vw;
-  }
-  .pc-body-five .menu-6 {
-    top: -52px;
-    right: 1.5vw;
-    width: 10vw;
   }
   .text-1 {
     width: 77px;
@@ -340,20 +322,7 @@ body {
     width: 77px;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 900px) {
-  .pc-body-three .menu {
-    top: 130px;
-    left: 10.2vw;
-  }
-}
 @media screen and (min-width: 900px) and (max-width: 1000px) {
-  .pc-body .menu-text {
-    font-size: 18px;
-  }
-  .pc-body-three .menu {
-    top: 140px;
-    left: 10.5vw;
-  }
   .pc-body-three .logo {
     top: 30px;
   }
@@ -371,16 +340,6 @@ body {
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .pc-body .menu-text {
-    font-size: 18px;
-  }
-  .pc-body-one .menu {
-    top: -60px;
-  }
-  .pc-body-three .menu {
-    top: 150px;
-    left: 10.5vw;
-  }
   .pc-body-three .logo {
     top: 30px;
   }
@@ -398,27 +357,11 @@ body {
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .pc-body .menu-text {
-    font-size: 20px;
-  }
-  .pc-body-one .menu {
-    top: -70px;
-  }
-  .pc-body-two .menu {
-    top: -55px;
-  }
-  .pc-body-three .menu {
-    top: 170px;
-    left: 10.5vw;
-  }
   .pc-body-three .logo {
     top: 30px;
   }
   .pc-body-four {
     margin-bottom: -20px;
-  }
-  .pc-body-four .menu {
-    top: -27px;
   }
   .text-1 {
     width: 96px;
@@ -442,29 +385,11 @@ body {
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
-  .pc-body .menu-text {
-    font-size: .9rem;
-  }
   .pc-body-one {
     margin-bottom: -49px;
   }
-  .pc-body-one .menu {
-    top: -80px;
-    left: 5vw;
-    width: 9vw;
-  }
   .pc-body-two {
     margin-bottom: -18px;
-  }
-  .pc-body-two .menu {
-    top: -65px;
-    left: 0;
-    width: 12.5vw;
-  }
-  .pc-body-three .menu {
-    top: 207px;
-    left: 10.5vw;
-    width: 10vw;
   }
   .pc-body-three .logo {
     top: 40px;
@@ -472,52 +397,21 @@ body {
   .pc-body-four {
     margin-bottom: -25px;
   }
-  .pc-body-four .menu {
-    top: -34px;
-  }
-  .pc-body-five .menu-5 {
-    width: 12.5vw;
-  }
 }
 @media screen and (min-width: 1500px) and (max-width: 1600px) {
-  .pc-body .menu-text {
-    font-size: 1rem;
-  }
-  .pc-body-three .menu {
-    top: 230px;
-  }
-  .pc-body-four .menu {
-    right: 0;
-  }
   .pc-body-five {
     margin-bottom: -42px;
   }
-  .pc-body-five .menu-6 {
-    top: -70px;
-  }
 }
 @media screen and (min-width: 1600px) and (max-width: 1860px) {
-  .pc-body .menu-text {
-    /* height: auto; */
-    font-size: 24px;
-  }
   .pc-body .menu-bg {
-    width: auto;
+    /* width: auto; */
   }
   .pc-body-one {
     margin-bottom: -58px;
   }
-  .pc-body-one .menu {
-    top: -90px;
-  }
   .pc-body-two {
     margin-bottom: -20px;
-  }
-  .pc-body-two .menu {
-    top: -75px;
-  }
-  .pc-body-three .menu {
-    top: 240px;
   }
   .pc-body-three .logo {
     top: 60px;
@@ -525,53 +419,16 @@ body {
   .pc-body-four {
     margin-bottom: -28px;
   }
-  .pc-body-four .menu {
-    top: -30px;
-    right: 0;
-  }
   .pc-body-five {
     margin-bottom: -48px;
-  }
-  .pc-body-five .menu-6 {
-    top: -70px;
   }
 }
 @media screen and (min-width: 1860px) {
   .pc-body-one {
     margin-left: 4vw;
   }
-  .pc-body-one .menu {
-    top: -88px;
-    left: 100px;
-    width: 158px;
-  }
-  .pc-body-two .menu {
-    top: -80px;
-    left: 13px;
-    width: 222px;
-  }
-  .pc-body-three .menu {
-    top: 269px;
-    left: 198px;
-    width: 180px;
-  }
   .pc-body-three .logo {
-    margin-left: -80px;
-    width: 160px;
-  }
-  .pc-body-four .menu {
-    top: -30px;
-    right: 20px;
-    width: 168px;
-  }
-  .pc-body-five .menu-5 {
-    top: 15px;
-    left: 4.5vw;
-    width: 209px;
-  }
-  .pc-body-five .menu-6 {
-    top: -68px;
-    right: 1.5vw;
-    width: 168px;
+    margin-left: -70px;
+    width: 140px;
   }
 }

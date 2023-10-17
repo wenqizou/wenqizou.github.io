@@ -1,0 +1,121 @@
+.pc-body {
+  display: flex;
+  opacity: 0.5;
+  font-family: "hellofont-id-mingkebenwans", sans-serif;
+}
+.pc-body div {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: end;
+}
+
+.pc-body span {
+  position: relative;
+}
+
+.pc-body .menu-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+/*one---start*/
+.pc-body-one {
+  width: 22vw;
+  margin-bottom: -5vh;
+}
+.pc-body-one .menu {
+  top: -80px;
+  left: 4vw;
+}
+/*one---end*/
+
+/*two---start*/
+.pc-body-two {
+  margin-left: -4vw;
+  margin-bottom: -2vh;
+  width: 17.2vw;
+  z-index: 2;
+}
+.pc-body-two .menu {
+  top: -50px;
+  left: 2vw;
+}
+
+/*two---end*/
+
+/*three---start*/
+
+.pc-body-three {
+  margin-left: -5.7vw;
+  width: 49vw;
+}
+.pc-body-three .logo2 {
+  position: absolute;
+  top: 3.5vh;
+  left: 50%;
+  margin-left: -4.3vw;
+  width: 8.6vw;
+  max-width: 162px;
+  z-index: 2;
+}
+.pc-body-three .menu {
+  top: 30%;
+  left: 14vw;
+}
+/*three---end*/
+
+/*four---start*/
+.pc-body-four {
+  margin-left: -23.5vw;
+  margin-bottom: -2vh;
+  width: 29vw;
+}
+.pc-body-four .menu {
+  top: 0;
+  right: 1.5vw;
+}
+/*four---end*/
+
+/*five---start*/
+.pc-body-five {
+  margin-left: -6vw;
+  margin-bottom: -4vh;
+  width: 30vw;
+}
+.pc-body-five .menu-5 {
+  top: 50px;
+  left: 6.5vw;
+}
+.pc-body-five .menu-6 {
+  top: -30px;
+  right: 2.5vw;
+}
+/*five---end*/
+.pc-body div .img {
+  width: 100%;
+}
+.pc-body .auto {
+  width: 3vw;
+}
+.pc {
+  position: relative;
+}
+.modal-mid {
+  position: fixed;
+  font-family: "hellofont-id-mingkebenwans", sans-serif;
+  font-size: 5.2em;
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}

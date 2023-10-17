@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breeze 和煦</title>
+    <link rel="shortcut icon" href="./images/fav.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Nanum+Gothic&family=Raleway:wght@100&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./stylemenu.css" />
+    <script src="./jq.min.js"></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'hub3mfp',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="layout-container">
+      <header class="layout-header">
+        <nav class="navlist topmenu">
+          <a class="menu-1" href="https://order.toasttab.com/online/breeze-em-595-manhattan-avenue">ORDER</a>
+          <a class="menu-2" href="https://resy.com/cities/ny/breeze-ny"
+            >RESERVATION</a
+          >
+          <a class="menu-6" href="./menu.html">MENU</a>
+          <a class="menu-4" href="./comesoon.html">EVENT</a>
+          <a class="menu-5" href="./comesoon.html">CATERING</a>
+          <a
+            class="menu-3"
+            href="https://www.toasttab.com/breeze-em-595-manhattan-avenue/giftcards"
+            >GIFT CARD</a
+          >
+        </nav>
+        <div class="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a href="./index.html"><div class="logo"></div></a>
+      </header>
+    </div>
+    <div class="pc">
+      <div class="modal-mid">COMMING SOON</div>
+      <div class="pc-body">
+        <div class="auto"></div>
+        <div class="pc-body-one">
+          <span>
+            <img class="img" src="./images/scene-1.png" alt="" />
+          </span>
+        </div>
+        <div class="pc-body-two">
+          <span>
+            <img class="img" src="./images/scene-2.png" alt="" />
+          </span>
+        </div>
+        <div class="pc-body-three">
+          <span>
+            <img class="logo2" src="./images/logo.png" alt="" />
+            <img class="img" src="./images/scene-3.png" alt="" />
+          </span>
+        </div>
+        <div class="pc-body-four">
+          <span>
+            <img class="img" src="./images/scene-4.png" alt="" />
+          </span>
+        </div>
+        <div class="pc-body-five">
+          <span>
+            <img class="img" src="./images/scene-5.png" alt="" />
+          </span>
+        </div>
+        <div class="auto"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $('.menu-toggle').click(() => {
+      const dom = $('.navlist.topmenu')
+      if (dom.hasClass('toggled')) {
+        dom.removeClass('toggled')
+      } else {
+        dom.addClass('toggled')
+      }
+    })
+  })
+</script>
