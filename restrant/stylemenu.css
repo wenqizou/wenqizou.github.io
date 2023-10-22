@@ -264,6 +264,13 @@ a {
 .spicy {
   margin-right: 10px;
 }
+.step-img{
+  margin-top: 20px;
+}
+.step-img img{
+  width: 100%;
+  max-width: 700px;
+}
 .spicy_icon {
   background: url(./images/spicy.png) no-repeat center;
   display: inline-block;
@@ -452,5 +459,8 @@ footer::after {
   }
   .modal-mid {
     font-size: 3em;
+  }
+  .step-img img{
+    width: 90%;
   }
 }

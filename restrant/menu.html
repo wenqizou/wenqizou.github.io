@@ -132,7 +132,7 @@
         </div>
         <div class="pc-footer-right">
           <p class="link-a">
-            <a href="peiyu.yang@breezebk.com">Work with us</a>
+            <a href="mailto:peiyu.yang@breezebk.com">Work with us</a>
           </p>
           <div class="ins">
             <a target="_blank" href="https://www.instagram.com/breezehexu/"
@@ -140,7 +140,7 @@
             /></a>
           </div>
           <p class="link-a">
-            <a href="hytaodesign@gmail.com">
+            <a href="mailto:hytaodesign@gmail.com">
               Illustration By<br />
               Hanyu Tao<br
             /></a>
@@ -190,7 +190,7 @@
         </div>
         <div class="mobile-footer-bottom">
           <p class="link-a">
-            <a href="peiyu.yang@breezebk.com">Work with us</a>
+            <a href="mailto:peiyu.yang@breezebk.com">Work with us</a>
           </p>
           <div class="ins">
             <a target="_blank" href="https://www.instagram.com/breezehexu/"
@@ -198,7 +198,7 @@
             /></a>
           </div>
           <p class="link-a">
-            <a href="hytaodesign@gmail.com">
+            <a href="mailto:hytaodesign@gmail.com">
               Illustration By<br />
               Hanyu Tao<br
             /></a>
@@ -248,6 +248,7 @@
                     </div>
                   </div>
                   ${e['Chinese name'] ? '<h4>' + e.name + '</h4>' : ''}
+                  ${e.image?'<div><img src="./pics/'+e.image+'" width="100%"></div>':''}
                   <div class="menu_itemDescription">${e.description}</div>
                 </div>`
       )
@@ -325,6 +326,7 @@
                     ${joinMenuInfo(res, e.enName)}
                   </div>
                 </div>
+                ${e.enName=='Soft Drink'?'<div class="step-img"><img src="./images/steps.jpg"></div>':''}
               </section>`
         )
         $('#main-body').html(sections.join(''))
