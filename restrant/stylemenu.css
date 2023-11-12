@@ -166,7 +166,9 @@ a {
 } */
 .menu_categoryNav {
   --category-nav-padding-top: 1em;
+  line-height:1.5;
   padding-top: var(--category-nav-padding-top);
+  font-family: "fot-tsukubrdgothic-std", sans-serif;
 }
 .navlink {
   position: sticky;
@@ -189,9 +191,11 @@ a {
 }
 .categoryLink .subcategory a {
   margin-bottom: 1em;
+  transform: translateY(-0);
+  transition: all 0.2s linear;
 }
 .categoryLink a:hover {
-  text-decoration: underline;
+  transform: translateY(-6px);
 }
 .menu_category {
   scroll-margin-top: var(--header-h);
@@ -205,6 +209,7 @@ a {
   font-size: var(--font-size-lg);
 }
 .menu-rule {
+  font-family:"fot-tsukubrdgothic-std", sans-serif;
   margin-top: 10px;
 }
 .menu_categoryItemsContainer {
@@ -221,6 +226,14 @@ a {
   -webkit-column-break-inside: avoid;
   break-inside: avoid;
   font-size: 20px;
+}
+.menu_subCategory .menu_item .sub_title{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0 15px;
+}
+.menu_subCategory .menu_item .noraml{
+  font-size: var(--font-size-m)
 }
 .menu_subCategory:nth-child(n + 2) {
   margin-top: 2em;
@@ -269,7 +282,7 @@ a {
 }
 .step-img img{
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
 }
 .spicy_icon {
   background: url(./images/spicy.png) no-repeat center;
@@ -286,6 +299,7 @@ a {
   background: var(--color-light);
   margin: 20px calc(-1 * var(--page-padding-h)) calc(-1 * var(--page-padding-h));
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 .navlink_bottom {
   font-family: "fot-tsukubrdgothic-std", sans-serif;

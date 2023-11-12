@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <link rel="stylesheet" href="./stylemenu.css" />
+    <link rel="stylesheet" href="./stylemenu.css?v=1110" />
     <script src="./jq.min.js"></script>
     <script>
       (function(d) {
@@ -223,6 +223,9 @@
   function menuBycategory(arr, category) {
     return arr.filter((e) => e.category == category)
   }
+  function hasChinese(string){
+    return /.*[\u4e00-\u9fa5]+.*$/.test(string)
+  }
   function joinMenuInfo(arr, category) {
     const spicytxt = (spicy) => {
       return spicy
@@ -235,19 +238,19 @@
     return filterRst
       .map(
         (e) => `<div class="menu_item">
+                  ${e['sub category']?`<div class="sub_title">${e['sub category']}</div>`:''}
                   <div class="menu_itemTitleRow">
-                    <h4 style="font-weight:bold;">${
-                      e['Chinese name'] ? e['Chinese name'] : e.name
-                    }${e.vegetarian ? '<i class="vg"></i>' : ''}${
-          e.glutenfree ? '<i class="gf"></i>' : ''
-        }
+                    <h4 style="font-weight:${e['Chinese name'] ? 'bold' : 'normal'};">
+                      ${e['Chinese name'] ? e['Chinese name'] : e.name}
+                      ${e.vegetarian ? '<i class="vg"></i>' : ''}
+                      ${e.glutenfree ? '<i class="gf"></i>' : ''}
                     </h4>
                     <div class="menu_itemTags">
                       <span class="spicy">${spicytxt(e.spicy)}</span>
                       <span>${e.price}</span>
                     </div>
                   </div>
-                  ${e['Chinese name'] ? '<h4>' + e.name + '</h4>' : ''}
+                  ${e['Chinese name'] ? '<h4 class="noraml">' + e.name + '</h4>' : ''}
                   ${e.image?'<div><img src="./pics/'+e.image+'" width="100%"></div>':''}
                   <div class="menu_itemDescription">${e.description}</div>
                 </div>`
@@ -264,6 +267,7 @@
 
   $(document).ready(function () {
     let raf = null
+    let raf2 = null
     window
       .fetch('./data.json')
       .then(function (response) {
@@ -343,10 +347,11 @@
               raf = window.requestAnimationFrame(dealFlag)
             } else {
               window.lock = false
-              const rate =
-                document.documentElement.scrollTop / document.body.scrollHeight
-              const diff = rate * $('.menu_categoryNav_bottom')[0].scrollWidth
-              $('.menu_categoryNav_bottom').scrollLeft(diff)
+              const activeBtn = $('.categoryLink.active')
+              const Rect = activeBtn[0].getBoundingClientRect()
+              if(!(Rect.left > 0 && Rect.left + Rect.width < document.body.clientWidth)){
+                $('.menu_categoryNav_bottom').scrollLeft(activeBtn[0].offsetLeft - 16)
+              }
             }
           }
           raf = window.requestAnimationFrame(dealFlag)
@@ -360,11 +365,26 @@
               dom.addClass('active')
             }
           })
-          const rate =
-            document.documentElement.scrollTop / document.body.scrollHeight
-          const diff = rate * $('.menu_categoryNav_bottom')[0].scrollWidth
           if (!window.lock) {
-            $('.menu_categoryNav_bottom').scrollLeft(diff)
+            const st = Date.now()
+            window.cancelAnimationFrame(raf2)
+            const scrollLeftHandler = ()=>{
+              const activeBtn = $('.categoryLink.active')
+              const Rect = activeBtn[0].getBoundingClientRect()
+              const et = Date.now()
+              const time = et - st
+              if(Rect.left > 0 && Rect.left + Rect.width < document.body.clientWidth){
+
+              }else{
+                if (time < 10) {
+                  raf2 = window.requestAnimationFrame(scrollLeftHandler)
+                } else {
+                  console.log(activeBtn[0].offsetLeft)
+                  $('.menu_categoryNav_bottom').scrollLeft(activeBtn[0].offsetLeft - 16)
+                }
+              }
+            }
+            raf2 = window.requestAnimationFrame(scrollLeftHandler)
           }
         }
       })
